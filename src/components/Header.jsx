@@ -60,16 +60,7 @@ const Header = () =>{
               className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>About</a></li>
             <li className='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
               className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Contact</a></li>
-            <li className='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Source</a></li>
-            <li className='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Store</a></li>
-            <li className='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Fashion</a></li>
-            <li className='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Partner</a></li>
-            <li className='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>More</a></li>
+            
           </ul>
         </div>
 
