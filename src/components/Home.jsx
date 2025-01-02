@@ -2,7 +2,7 @@ import { cardsData } from "../utils/constantData";
 
 const Home = () => {
   return (
-    <div className="font-mono">
+    <div className="font-mono bg-[#efefef]">
       {/* 4 tabs */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-sm:p-0 p-10 bg-[#efefef]">
         {
@@ -21,11 +21,11 @@ const Home = () => {
       </section>
 
       {/* Short About */}
-      <section className="relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black/65 before:z-10">
+      <section className="my-10 md:mx-5 relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black/65 before:z-10">
         <img src="images/about-car.jpg" alt="Banner Image" className="absolute inset-0 w-full h-full object-cover" />
 
         <div className="min-h-[380px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center p-6">
-          <h2 className="text-white sm:text-4xl text-2xl font-bold mb-6">Showcase Your Product or Service in Style</h2>
+          <h2 className="text-white sm:text-4xl text-2xl font-bold mb-6">About Lusaka Motors</h2>
           <p className="text-base text-center text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.</p>
           <button type="button"
             className="px-6 py-3 mt-12 rounded-full text-white text-base tracking-wider font-semibold outline-none  bg-orange-600 hover:bg-orange-700 border-2 border-orange-600 transition-all duration-300">Know More About us...</button>
