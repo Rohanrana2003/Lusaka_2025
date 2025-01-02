@@ -1,6 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { cardsData } from "../utils/constantData";
 
+
+
 const Home = () => {
+
+  const navigate = useNavigate();
+
+
+
   return (
     <div className="font-mono bg-[#efefef]">
       {/* 4 tabs */}
@@ -27,7 +35,7 @@ const Home = () => {
         <div className="min-h-[380px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center p-6">
           <h2 className="text-white sm:text-4xl text-2xl font-bold mb-6">About Lusaka Motors</h2>
           <p className="text-base text-center text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.</p>
-          <button type="button"
+          <button type="button" onClick={() => navigate('/about')}
             className="px-6 py-3 mt-12 rounded-full text-white text-base tracking-wider font-semibold outline-none  bg-orange-600 hover:bg-orange-700 border-2 border-orange-600 transition-all duration-300">Know More About us...</button>
         </div>
       </section>

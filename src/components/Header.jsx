@@ -1,9 +1,11 @@
 import { useRef } from "react"
 import { barIcon, crossIcon, facebookIcon, linkedinIcon, xIcon } from "../utils/constants"
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
 
   const collapseMenu = useRef();
+  const navigate = useNavigate();
 
   const handleToggleHeader = () => {
     if (collapseMenu.current.style.display === 'block') {
@@ -34,7 +36,7 @@ const Header = () => {
               </a>
             </li>
             <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-orange-500 font-bold text-[15px] block'>Home</a></li>
+              className='hover:text-orange-500 text-orange-500 font-bold text-[15px] block' onClick={()=>navigate('/')}>Home</a></li>
             <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
               className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Team</a></li>
             <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
@@ -42,9 +44,9 @@ const Header = () => {
             <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
               className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Blog</a></li>
             <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>About</a></li>
+              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block' onClick={()=>navigate('/about')}>About</a></li>
             <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Contact</a></li>
+              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block' onClick={()=>navigate('/contact')}>Contact</a></li>
 
           </ul>
         </div>
@@ -58,7 +60,7 @@ const Header = () => {
 
       <section
         className='flex items-center lg:justify-center flex-wrap gap-5 relative pb-3 sm:px-10 px-4 border-gray-200 border-b lg:min-h-[80px] max-lg:min-h-[60px]'>
-        <a href="javascript:void(0)"><img src='images/logo_black.png' alt="logo"
+        <a href="/"  onClick={()=>navigate('/about')}><img src='images/logo_black.png' alt="logo"
           className=' w-24' />
         </a>
 
