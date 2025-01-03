@@ -1,21 +1,55 @@
 export const cardsData = [
     {
+        id:1,
         name:'MAGAZINE',
         path:'/magazines',
-        url:'https://good-guys.com/images/2019/07/28/home-events.jpg'
     },
     {
+        id:2,
         name:'EVENT 1',
         path:'/event1',
-        url:'https://good-guys.com/images/2025/01/01/feb-gaz-25-sm.jpg'
-    },{
+    },
+    {
+        id:3,
         name:'EVENT 2',
         path:'/event2',
-        url:'https://good-guys.com/images/2019/07/28/home-join.jpg'
-    },{
+    },
+    {
+        id:4,
         name:'EVENT 3',
         path:'/event3',
-        url:'https://good-guys.com/images/2021/12/07/watson_210816_0863_hr-copy-2.jpg'
     }
+]
 
+export const headerButtons = [
+    {
+        id:1,
+        name:'Home',
+        pathName:'/',
+        isClicked:true
+    },
+    {
+        id:2,
+        name:'Gallery',
+        pathName:'gallery',
+        isClicked:false
+    },
+    {
+        id:3,
+        name:'Blog',
+        pathName:'blog',
+        isClicked:false
+    },
+    {
+        id:4,
+        name:'About',
+        pathName:'about',
+        isClicked:false
+    },
+    {
+        id:5,
+        name:'Contact',
+        pathName:'contact',
+        isClicked:false
+    },
 ]

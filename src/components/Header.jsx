@@ -1,11 +1,14 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { barIcon, crossIcon, facebookIcon, linkedinIcon, xIcon } from "../utils/constants"
 import { useNavigate } from "react-router-dom";
+import { headerButtons } from "../utils/constantData";
 
 const Header = () => {
 
+  const [selectedButton, setSelectedButton] = useState(1); 
   const collapseMenu = useRef();
   const navigate = useNavigate();
+
 
   const handleToggleHeader = () => {
     if (collapseMenu.current.style.display === 'block') {
@@ -13,6 +16,12 @@ const Header = () => {
     } else {
       collapseMenu.current.style.display = 'block';
     }
+  }
+
+
+  const handlePageRedirect = (item) =>{
+    setSelectedButton(item.id);
+    navigate(item.pathName);
   }
 
   return (
@@ -35,18 +44,13 @@ const Header = () => {
               <a href="javascript:void(0)"><img src="images/logo_black.png" alt="logo" className='w-36' />
               </a>
             </li>
-            <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-orange-500 font-bold text-[15px] block' onClick={()=>navigate('/')}>Home</a></li>
-            <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Team</a></li>
-            <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Feature</a></li>
-            <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block'>Blog</a></li>
-            <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block' onClick={()=>navigate('/about')}>About</a></li>
-            <li className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)'
-              className='hover:text-orange-500 text-gray-500 font-bold text-[15px] block' onClick={()=>navigate('/contact')}>Contact</a></li>
+
+            {
+              headerButtons.map((item, i) => (
+                <li key={i} className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)' onClick={()=>handlePageRedirect(item)}
+                  className={` font-bold text-[15px] block ${selectedButton === item.id ? 'text-orange-500':'text-black'}`} >{item.name}</a></li>
+              ))
+            }
 
           </ul>
         </div>
@@ -60,7 +64,7 @@ const Header = () => {
 
       <section
         className='flex items-center lg:justify-center flex-wrap gap-5 relative pb-3 sm:px-10 px-4 border-gray-200 border-b lg:min-h-[80px] max-lg:min-h-[60px]'>
-        <a href="/"  onClick={()=>navigate('/about')}><img src='images/logo_black.png' alt="logo"
+        <a className="cursor-pointer" onClick={() =>{navigate('/'); setSelectedButton(1)}} ><img src='images/logo_black.png' alt="logo"
           className=' w-24' />
         </a>
 

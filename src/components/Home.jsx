@@ -7,8 +7,6 @@ const Home = () => {
 
   const navigate = useNavigate();
 
-
-
   return (
     <div className="font-mono bg-[#efefef]">
       {/* 4 tabs */}
@@ -16,7 +14,7 @@ const Home = () => {
         {
           cardsData.map((item, i) => (
             <div className={`relative group max-w-[650px] h-[500px] max-md:h-[350px] mx-6 my-2 bg-cover cursor-pointer 
-              flex justify-center items-center transition-all duration-700 bg-center bg-[url('${item.url}')] 
+              flex justify-center items-center transition-all duration-700 bg-center bg-[url('images/main-${item.id}.jpg')] 
               before:absolute before:w-full before:h-full before:inset-0 before:bg-black/45 hover:before:bg-black/65 before:transition-all before:duration-700 before:z-10`} key={i}>
 
               <div className="absolute z-20 flex flex-col gap-32 items-center  text-white transition-all duration-300 group-hover:-translate-y-4">
