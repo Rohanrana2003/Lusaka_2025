@@ -6,25 +6,6 @@ const Footer = () => {
     <footer className="bg-black py-12 px-8 font-sans tracking-wide">
       <div className="max-w-screen-xl mx-auto">
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <li>
-            <h3 className="text-orange-400 text-4xl">25+</h3>
-            <p className="text-gray-400 text-sm mt-2">Years of Experience</p>
-          </li>
-          <li>
-            <h3 className="text-orange-400 text-4xl">99%</h3>
-            <p className="text-gray-400 text-sm mt-2">Happy Customers</p>
-          </li>
-          <li>
-            <h3 className="text-orange-400 text-4xl">150+</h3>
-            <p className="text-gray-400 text-sm mt-2">Successful projects</p>
-          </li>
-          <li>
-            <h3 className="text-orange-400 text-4xl">50+</h3>
-            <p className="text-gray-400 text-sm mt-2">Team Members</p>
-          </li>
-        </ul>
-
         {/* <div className="grid max-sm:grid-cols-1 lg:grid-cols-3 items-center gap-8">
           <h4 className="lg:col-span-2 text-lg font-semibold text-white leading-relaxed">Join our newsletter to keep up to date with us!<br /> Enter your email Subscribe</h4>
           <div className="bg-transparent border border-gray-600 flex px-1 py-1 rounded-full max-lg:max-w-md">
@@ -33,8 +14,6 @@ const Footer = () => {
               className="bg-blue-600 hover:bg-blue-700 transition-all text-white text-sm rounded-full px-4 py-2">Subscribe</button>
           </div>
         </div> */}
-
-        <hr className="my-12 border-gray-800" />
 
         <div className="grid max-sm:grid-cols-1 max-lg:grid-cols-2 lg:grid-cols-5 lg:gap-20 max-lg:gap-8">
           <div className="lg:col-span-3 max-lg:col-span-full">

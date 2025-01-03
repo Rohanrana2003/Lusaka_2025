@@ -25,7 +25,7 @@ const Header = () => {
   }
 
   return (
-    <header className='shadow-md bg-white font-sans tracking-wide relative z-50 '>
+    <header className='shadow-md bg-[#66A5AD] font-sans tracking-wide relative z-50 '>
 
       <div className='flex flex-wrap pt-8 lg:pb-6 px-10 overflow-x-auto '>
 
@@ -48,7 +48,7 @@ const Header = () => {
             {
               headerButtons.map((item, i) => (
                 <li key={i} className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)' onClick={()=>handlePageRedirect(item)}
-                  className={` font-bold text-[15px] block ${selectedButton === item.id ? 'text-orange-500':'text-black'}`} >{item.name}</a></li>
+                  className={` font-bold text-[15px] block ${selectedButton === item.id ? 'text-orange-100':'text-black'}`} >{item.name}</a></li>
               ))
             }
 

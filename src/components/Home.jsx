@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { cardsData } from "../utils/constantData";
+import Stats from "./subComponents/Stats";
 
 
 
@@ -8,14 +9,14 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="font-mono bg-[#efefef]">
+    <div className="font-mono bg-[#C4DFE6]">
       {/* 4 tabs */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-sm:p-0 p-10 bg-[#efefef]">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-sm:p-0 p-10 ">
         {
-          cardsData.map((item, i) => (
+          cardsData.map((item) => (
             <div className={`relative group max-w-[650px] h-[500px] max-md:h-[350px] mx-6 my-2 bg-cover cursor-pointer 
               flex justify-center items-center transition-all duration-700 bg-center bg-[url('images/main-${item.id}.jpg')] 
-              before:absolute before:w-full before:h-full before:inset-0 before:bg-black/45 hover:before:bg-black/65 before:transition-all before:duration-700 before:z-10`} key={i}>
+              before:absolute before:w-full before:h-full before:inset-0 before:bg-black/45 hover:before:bg-black/65 before:transition-all before:duration-700 before:z-10`} key={item.id}>
 
               <div className="absolute z-20 flex flex-col gap-32 items-center  text-white transition-all duration-300 group-hover:-translate-y-4">
                 <p className="font-bold text-5xl">{item.name}</p>
@@ -36,6 +37,11 @@ const Home = () => {
           <button type="button" onClick={() => navigate('/about')}
             className="px-6 py-3 mt-12 rounded-full text-white text-base tracking-wider font-semibold outline-none  bg-orange-600 hover:bg-orange-700 border-2 border-orange-600 transition-all duration-300">Know More About us...</button>
         </div>
+      </section>
+
+      {/* Stats */}
+      <section>
+        {Stats}
       </section>
     </div>
   );
