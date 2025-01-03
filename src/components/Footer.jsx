@@ -3,7 +3,7 @@
 const Footer = () => {
 
   return (
-    <footer className="bg-black py-12 px-8 font-sans tracking-wide">
+    <footer className="bg-[#66A5AD] py-12 px-16 font-sans tracking-wide">
       <div className="max-w-screen-xl mx-auto">
 
         {/* <div className="grid max-sm:grid-cols-1 lg:grid-cols-3 items-center gap-8">
@@ -17,38 +17,38 @@ const Footer = () => {
 
         <div className="grid max-sm:grid-cols-1 max-lg:grid-cols-2 lg:grid-cols-5 lg:gap-20 max-lg:gap-8">
           <div className="lg:col-span-3 max-lg:col-span-full">
-            <a href='javascript:void(0)'><img src="images/logo_white.png" alt="logo" className='w-36' /></a>
-            <p className="text-gray-400 leading-relaxed text-sm lg:max-w-sm mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida,
+            <a href='javascript:void(0)'><img src="images/logo_black.png" alt="logo" className='w-36' /></a>
+            <p className="text-white leading-relaxed text-sm lg:max-w-sm mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida,
               mi eu pulvinar cursus, sem elit interdum mauris.</p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-400">Services</h4>
+            <h4 className="text-lg font-semibold mb-4 text-black">Services</h4>
             <ul className="space-y-4">
-              <li><a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Web
+              <li><a href="javascript:void(0)" className="text-white hover:text-gray-300 text-sm">Web
                 Development</a></li>
-              <li><a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Mobile App
+              <li><a href="javascript:void(0)" className="text-white hover:text-gray-300 text-sm">Mobile App
                 Development</a></li>
-              <li><a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">UI/UX
+              <li><a href="javascript:void(0)" className="text-white hover:text-gray-300 text-sm">UI/UX
                 Design</a></li>
-              <li><a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Digital Marketing</a></li>
+              <li><a href="javascript:void(0)" className="text-white hover:text-gray-300 text-sm">Digital Marketing</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-400">About Us</h4>
+            <h4 className="text-lg font-semibold mb-4 text-black">About Us</h4>
             <ul className="space-y-4">
-              <li><a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Our Story</a>
+              <li><a href="javascript:void(0)" className="text-white hover:text-gray-300 text-sm">Our Story</a>
               </li>
-              <li><a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Mission and
+              <li><a href="javascript:void(0)" className="text-white hover:text-gray-300 text-sm">Mission and
                 Values</a></li>
-              <li><a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Team</a></li>
-              <li><a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm">Testimonials</a></li>
+              <li><a href="javascript:void(0)" className="text-white hover:text-gray-300 text-sm">Team</a></li>
+              <li><a href="javascript:void(0)" className="text-white hover:text-gray-300 text-sm">Testimonials</a></li>
             </ul>
           </div>
         </div>
 
-        <p className='text-sm text-gray-400 mt-8'>© LusakaMotors. All rights reserved.</p>
+        <p className='text-sm text-white mt-8'>© LusakaMotors. All rights reserved.</p>
       </div>
     </footer>
   )

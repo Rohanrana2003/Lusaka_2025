@@ -37,9 +37,9 @@ const Header = () => {
           </button>
 
           <ul
-            className='sm:flex sm:justify-center sm:gap-x-10 max-sm:space-y-3 max-sm:fixed max-sm:bg-white 
-    max-sm:w-1/2 max-sm:min-w-[300px] max-sm:top-0 max-sm:left-0 max-sm:p-6 max-sm:h-full max-sm:shadow-md 
-    max-sm:overflow-auto z-50'>
+            className='sm:flex sm:justify-center sm:gap-x-10 max-sm:space-y-3 max-sm:fixed max-sm:bg-[#66A5AD] 
+              max-sm:w-1/2 max-sm:min-w-[300px] max-sm:top-0 max-sm:left-0 max-sm:p-6 max-sm:h-full max-sm:shadow-md 
+              max-sm:overflow-auto z-50'>
             <li className='mb-6 hidden max-sm:block'>
               <a href="javascript:void(0)"><img src="images/logo_black.png" alt="logo" className='w-36' />
               </a>
@@ -63,7 +63,7 @@ const Header = () => {
       </div>
 
       <section
-        className='flex items-center lg:justify-center flex-wrap gap-5 relative pb-3 sm:px-10 px-4 border-gray-200 border-b lg:min-h-[80px] max-lg:min-h-[60px]'>
+        className='flex items-center lg:justify-center flex-wrap gap-5 relative pb-3 sm:px-10 px-4 border-gray-400 border-b lg:min-h-[80px] max-lg:min-h-[60px]'>
         <a className="cursor-pointer" onClick={() =>{navigate('/'); setSelectedButton(1)}} ><img src='images/logo_black.png' alt="logo"
           className=' w-24' />
         </a>
