@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home'
 import { Routes, Route, useNavigate } from "react-router-dom";
+import Gallery from './components/Gallery';
 
 function App() {
   const navigate = useNavigate()
@@ -22,6 +23,8 @@ function App() {
         <Route path='/about' element={<About/>}/>
 
         <Route path='/contact' element={<Contact/>}/>
+
+        <Route path='/gallery' element={<Gallery/>}/>
 
       </Routes>
 
