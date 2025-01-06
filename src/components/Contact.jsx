@@ -1,12 +1,18 @@
+import { useEffect } from "react"
 
 const Contact = () => {
+
+  useEffect(() => {
+    scrollTo(0, 0)
+  }, [])
+
   return (
-    <div className="font-[sans-serif]">
+    <div className="font-[sans-serif] bg-white">
       <div className="bg-gradient-to-r from-blue-700 to-blue-300 w-full h-60">
         <img src="images/about-car.jpg" alt="Banner Image" className="w-full h-full object-cover" />
       </div>
 
-      <div className="-mt-20 mb-16 px-4">
+      <div className="-mt-20 pb-16 px-4">
         <div className="mx-auto max-w-6xl shadow-lg p-8 relative bg-[#C4DFE6] rounded ">
           <h2 className="text-xl text-gray-800 font-bold text-center">Contact Lusaka Motors Team </h2>
 
@@ -14,27 +20,27 @@ const Contact = () => {
             <div>
               <label className="text-gray-800 text-sm block mb-2">Your Name</label>
               <input type='text' placeholder='Enter Name'
-                className="w-full rounded py-2.5 px-4 focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
+                className="w-full rounded py-2.5 px-4 bg-white focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
             </div>
             <div>
               <label className="text-gray-800 text-sm block mb-2">Your Email</label>
               <input type='email' placeholder='Email'
-                className="w-full rounded py-2.5 px-4 focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
+                className="w-full rounded py-2.5 px-4 bg-white focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
             </div>
             <div>
               <label className="text-gray-800 text-sm block mb-2">Your Number</label>
               <input type='email' placeholder='Phone No.'
-                className="w-full rounded py-2.5 px-4 focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
+                className="w-full rounded py-2.5 px-4 bg-white focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
             </div>
             <div>
               <label className="text-gray-800 text-sm block mb-2">Subject</label>
               <input type='text' placeholder='Subject'
-                className="w-full rounded py-2.5 px-4 focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
+                className="w-full rounded py-2.5 px-4 bg-white focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
             </div>
             <div className="col-span-full">
               <label className="text-gray-800 text-sm block mb-2">Message</label>
               <textarea placeholder='Message' rows="6"
-                className="w-full rounded px-4 border border-gray-300 text-sm pt-3 focus:border-blue-600 outline-none"></textarea>
+                className="w-full rounded px-4 border bg-white border-gray-300 text-sm pt-3 focus:border-blue-600 outline-none"></textarea>
             </div>
 
             <button type='button'

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { imgData } from "../../utils/constantData"
-
+import { rightArrow } from "../../utils/constants";
 
 
 const MiniGallery = () => {
@@ -8,7 +8,7 @@ const MiniGallery = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="text-center min-w-full">  
+        <div className="text-center min-w-full pb-16">
             <h2 className="text-gray-800 font-[sans-serif] text-3xl font-bold mt-16 text-center">Some Unforgettable Memories</h2>
 
             <div className="carousel rounded-box p-10">
@@ -21,7 +21,11 @@ const MiniGallery = () => {
                 }
             </div>
 
-            <button className="text-center mb-16 px-10 py-4 text-black border border-black group" onClick={()=>navigate('/gallery')}>View More <span className="group-hover:translate-x-5">{'>'}</span> </button>
+            <button className="flex items-center mx-auto px-8 py-3 text-black text-lg border border-black group"
+                onClick={() => navigate('/gallery')}>
+                View More
+                <span className=" group-hover:translate-x-3 mt-[2px] transition-all duration-500">{rightArrow}</span>
+            </button>
         </div>
     )
 }

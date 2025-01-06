@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { imgData } from "../utils/constantData";
 
 
-
 const DefaultGallery = () => {
+
+    useEffect(()=>{
+        scrollTo(0, 0)
+    },[])
 
     return (
         <div className="p-5 md:p-10 bg-[#C4DFE6]">

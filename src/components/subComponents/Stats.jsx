@@ -2,7 +2,7 @@
 
 const Stats = () => {
   return (
-    <div className="bg-gray-50 px-4 py-14 font-[sans-serif]">
+    <div className="bg-gray-50 px-4 py-14 pb-16 font-[sans-serif]">
       <h2 className="text-gray-800 text-3xl font-bold mb-14 text-center">Application Metrics</h2>
       <div className="grid sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
 

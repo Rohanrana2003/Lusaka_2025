@@ -2,8 +2,13 @@ import { useNavigate } from "react-router-dom";
 import { cardsData } from "../utils/constantData";
 import Stats from "../components/subComponents/Stats";
 import MiniGallery from "./subComponents/MiniGallery";
+import { useEffect } from "react";
 
 const Home = () => {
+
+  useEffect(() => {
+    scrollTo(0, 0)
+  }, [])
 
   const navigate = useNavigate();
 
