@@ -4,6 +4,7 @@ import Stats from "../components/subComponents/Stats";
 import MiniGallery from "./subComponents/MiniGallery";
 import { useContext, useEffect } from "react";
 import MyContext from "../context/MyContext";
+import Faq from "./subComponents/Faq";
 
 const Home = () => {
 
@@ -11,7 +12,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    scrollTo(0, 0)
+    scrollTo(0, 0);
   }, [])
 
   const navigateToAbout = () => {
@@ -58,6 +59,11 @@ const Home = () => {
       {/* Mini-Gallery */}
       <section>
         <MiniGallery />
+      </section>
+
+      {/* Faq */}
+      <section>
+        <Faq />
       </section>
 
     </div>
