@@ -7,7 +7,7 @@ const Contact = () => {
   }, [])
 
   return (
-    <div className="font-[sans-serif] bg-white">
+    <div className="font-[sans-serif] bg-[#dedede]">
       <div className="bg-gradient-to-r from-blue-700 to-blue-300 w-full h-60">
         <img src="images/about-car.jpg" alt="Banner Image" className="w-full h-full object-cover" />
       </div>

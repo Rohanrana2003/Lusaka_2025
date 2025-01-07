@@ -2,6 +2,7 @@ import { useEffect } from "react"
 
 
 const About = () => {
+  
 
   useEffect(() => {
     scrollTo(0, 0)

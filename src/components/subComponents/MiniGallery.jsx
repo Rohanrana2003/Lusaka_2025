@@ -1,11 +1,19 @@
 import { useNavigate } from "react-router-dom"
 import { imgData } from "../../utils/constantData"
 import { rightArrow } from "../../utils/constants";
+import { useContext } from "react";
+import MyContext from "../../context/MyContext";
 
 
 const MiniGallery = () => {
 
     const navigate = useNavigate();
+    const [, setSelectedButton] = useContext(MyContext);
+
+    const navigateToGallery = () =>{
+        navigate('/gallery');
+        setSelectedButton(2);
+    }
 
     return (
         <div className="text-center min-w-full pb-16">
@@ -22,7 +30,7 @@ const MiniGallery = () => {
             </div>
 
             <button className="flex items-center mx-auto px-8 py-3 text-black text-lg border border-black group"
-                onClick={() => navigate('/gallery')}>
+                onClick={navigateToGallery}>
                 View More
                 <span className=" group-hover:translate-x-3 mt-[2px] transition-all duration-500">{rightArrow}</span>
             </button>

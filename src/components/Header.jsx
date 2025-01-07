@@ -1,11 +1,12 @@
-import { useRef, useState } from "react"
+import { useContext, useRef } from "react"
 import { barIcon, crossIcon, facebookIcon, linkedinIcon, xIcon } from "../utils/constants"
 import { useNavigate } from "react-router-dom";
 import { headerButtons } from "../utils/constantData";
+import MyContext from "../context/MyContext";
 
 const Header = () => {
 
-  const [selectedButton, setSelectedButton] = useState(1); 
+  const [selectedButton, setSelectedButton] = useContext(MyContext); 
   const collapseMenu = useRef();
   const navigate = useNavigate();
 
@@ -17,7 +18,6 @@ const Header = () => {
       collapseMenu.current.style.display = 'block';
     }
   }
-
 
   const handlePageRedirect = (item) =>{
     setSelectedButton(item.id);
@@ -48,7 +48,7 @@ const Header = () => {
             {
               headerButtons.map((item, i) => (
                 <li key={i} className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)' onClick={()=>handlePageRedirect(item)}
-                  className={` font-bold text-[15px] block ${selectedButton === item.id ? 'text-orange-100':'text-black'}`} >{item.name}</a></li>
+                  className={` font-medium text-[17px] block ${selectedButton === item.id ? 'text-orange-100':'text-black'}`} >{item.name}</a></li>
               ))
             }
 
