@@ -5,6 +5,7 @@ import MiniGallery from "./subComponents/MiniGallery";
 import { useContext, useEffect } from "react";
 import MyContext from "../context/MyContext";
 import Faq from "./subComponents/Faq";
+import Partners from "./subComponents/Partners";
 
 const Home = () => {
 
@@ -12,7 +13,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    scrollTo(0, 0);
+    // scrollTo(0, 0);
   }, [])
 
   const navigateToAbout = () => {
@@ -21,7 +22,7 @@ const Home = () => {
   }
 
   return (
-    <div className="font-mono bg-[#C4DFE6]">
+    <div className="font-mono bg-[#fff]">
       {/* 4 tabs */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-sm:p-0 p-10 ">
         {
@@ -40,8 +41,7 @@ const Home = () => {
       </section>
 
       {/* Short About */}
-      <section className="mt-10 md:mx relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 before:z-10">
-        <img src="images/mini-about-image.jpg" alt="Banner Image" className="absolute inset-0 w-full h-full object-cover" />
+      <section className="mt-10 relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 before:z-10 bg-[url('images/mini-about-image.jpg')] bg-center bg-cover">
 
         <div className="min-h-[380px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center p-6">
           <h2 className="text-white sm:text-4xl text-2xl font-bold mb-6">About Lusaka Motors</h2>
@@ -51,20 +51,28 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Mini-Gallery */}
+      <section>
+        <MiniGallery />
+      </section>
+
       {/* Stats */}
       <section>
         <Stats />
       </section>
 
-      {/* Mini-Gallery */}
-      <section>
-        <MiniGallery />
+       {/* Our Partners */}
+       <section>
+        <Partners />
       </section>
 
       {/* Faq */}
       <section>
         <Faq />
       </section>
+
+     
+
 
     </div>
   );

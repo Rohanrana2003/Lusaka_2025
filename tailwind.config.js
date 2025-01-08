@@ -7,7 +7,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow:{
+          topBottomShadow: `inset 0 5px 5px -5px #333, 
+                      inset 0 -5px 5px -5px #333`
+      },
+      
+      
+    },
   },
   plugins: [
     daisyui
