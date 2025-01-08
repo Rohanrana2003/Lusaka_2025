@@ -6,7 +6,7 @@ const Faq = () => {
     return (
         <section className="font-sans bg-white ">
             <div className="container py-12 mx-auto">
-                <h1 className="lg:text-3xl mb-10 text-gray-800 font-[sans-serif] text-3xl font-bold text-center">Frequently asked questions.</h1>
+                <h1 className="lg:text-3xl mb-10 text-gray-800 font-[sans-serif] text-3xl font-bold text-center">Frequently Asked Questions.</h1>
 
                 <div className="flex flex-col md:flex-row md:gap-16 mt-16 lg:px-10 ">
 
@@ -29,9 +29,6 @@ const Faq = () => {
                             ))
 
                         }
-
-
-
 
                     </div>
 

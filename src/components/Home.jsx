@@ -41,7 +41,7 @@ const Home = () => {
 
       {/* Short About */}
       <section className="mt-10 md:mx relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 before:z-10">
-        <img src="images/about-car.jpg" alt="Banner Image" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="images/mini-about-image.jpg" alt="Banner Image" className="absolute inset-0 w-full h-full object-cover" />
 
         <div className="min-h-[380px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center p-6">
           <h2 className="text-white sm:text-4xl text-2xl font-bold mb-6">About Lusaka Motors</h2>

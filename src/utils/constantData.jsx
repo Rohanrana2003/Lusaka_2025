@@ -36,8 +36,8 @@ export const headerButtons = [
     },
     {
         id:3,
-        name:'Blog',
-        pathName:'blog',
+        name:'Events',
+        pathName:'events',
         isClicked:false
     },
     {
@@ -102,12 +102,12 @@ export const faqData = [
   {
     id:2,
     title:'What are your opening house?',
-    content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.z'
+    content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae'
   },
   {
     id:3,
     title:'Do i need a referral?',
-    content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.'
+    content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis. dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.z'
   },
   {
     id:4,

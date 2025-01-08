@@ -9,14 +9,14 @@ const Contact = () => {
   return (
     <div className="font-[sans-serif] bg-[#dedede]">
       <div className="bg-gradient-to-r from-blue-700 to-blue-300 w-full h-60">
-        <img src="images/about-car.jpg" alt="Banner Image" className="w-full h-full object-cover" />
+        <img src="images/mini-about-image.jpg" alt="Banner Image" className="w-full h-full object-cover" />
       </div>
 
       <div className="-mt-20 pb-16 px-4">
-        <div className="mx-auto max-w-6xl shadow-lg p-8 relative bg-[#C4DFE6] rounded ">
+        <div className="max-md:m-5   mx-auto max-w-6xl shadow-lg p-5 relative bg-[#C4DFE6] rounded ">
           <h2 className="text-xl text-gray-800 font-bold text-center">Contact Lusaka Motors Team </h2>
 
-          <form className="mt-8 grid sm:grid-cols-2 gap-6 ">
+          <form className="mt-8 grid sm:grid-cols-2 gap-6  md:p-10">
             <div>
               <label className="text-gray-800 text-sm block mb-2">Your Name</label>
               <input type='text' placeholder='Enter Name'
@@ -53,10 +53,10 @@ const Contact = () => {
           </form>
 
           <section >
-            <div className="container px-6 py-12 mx-auto">
+            <div className="container px-6 pb-12 mx-auto">
 
               <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
-                <div>
+                <div className="lg:border-r border-blue-400 ">
                   <span className="inline-block p-3 text-blue-500 rounded-full bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                       stroke="currentColor" className="w-6 h-6">
@@ -85,7 +85,7 @@ const Contact = () => {
                   <p className="mt-2 text-blue-500">100 Smith Street Collingwood VIC 3066 AU</p>
                 </div>
 
-                <div>
+                <div  className="lg:border-l border-blue-400 lg:pl-10">
                   <span className="inline-block p-3 text-blue-500 rounded-full bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                       stroke="currentColor" className="w-6 h-6">
