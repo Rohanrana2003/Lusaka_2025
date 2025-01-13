@@ -12,7 +12,7 @@ const Contact = () => {
         <img src="images/mini-about-image.jpg" alt="Banner Image" className="w-full h-full object-cover" />
       </div>
 
-      <div className="-mt-20 pb-16 px-4">
+      <div className="-mt-20 pb-16 px-4 ">
         <div className="max-md:m-5   mx-auto max-w-6xl shadow-lg p-5 relative bg-[#C4DFE6] rounded ">
           <h2 className="text-xl text-gray-800 font-bold text-center">Contact Lusaka Motors Team </h2>
 

@@ -14,8 +14,8 @@ const About = () => {
     <div className="font-serif">
 
       <section className="flex items-center relative justify-center w-[100%] h-80  before:absolute before:w-full before:h-full 
-          before:inset-0 before:bg-black/55 ">
-        <img className="object-cover w-full h-full" src="images/about-image.jpg" />
+          before:inset-0 before:bg-black/55 bg-[url('images/about-image.jpg')] bg-cover bg-center">
+        {/* <img className="object-cover w-full h-full" src="images/about-image.jpg" /> */}
         <h1 className="absolute max-md:text-5xl max-md:text-center text-6xl text-white font-semibold">About Lusaka Happening</h1>
       </section>
 
@@ -35,7 +35,7 @@ const About = () => {
 
 
       <section>
-      <Stats/>
+        <Stats />
       </section>
 
     </div>
