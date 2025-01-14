@@ -23,7 +23,7 @@ const MiniGallery = () => {
                 {
                     imgData.map((img, i) => (
                         <div className="carousel-item " key={i} >
-                            <img src={img.imageLink} className="transition-all duration-500 cursor-pointer lg:filter lg:grayscale hover:scale-[1.05] lg:hover:grayscale-0 w-80 aspect-[4/3] rounde ml-5" />
+                            <img src={img.imageLink} className="transition-all duration-500 cursor-pointer lg:filter lg:grayscale hover:scale-[1.05] lg:hover:grayscale-0 w-80 aspect-[4/3] rounde ml-5 object-cover" />
                         </div>
                     ))
                 }

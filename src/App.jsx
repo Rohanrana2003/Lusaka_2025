@@ -10,6 +10,7 @@ import MyContext from './context/MyContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Events from './components/Events';
+import Event1 from './components/subComponents/Event1';
 
 function App() {
   const navigate = useNavigate();
@@ -34,6 +35,8 @@ function App() {
         <Route path='/about' element={<About />} />
 
         <Route path='/contact' element={<Contact />} />
+
+        <Route path='/event1' element={<Event1 />} />
 
       </Routes>
 

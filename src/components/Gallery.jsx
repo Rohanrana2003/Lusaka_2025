@@ -22,12 +22,12 @@ const DefaultGallery = () => {
                     <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-gray-700 text-justify">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably havent heard of them man bun deep jianbing selfies heirloom.</p>
                 </div>
 
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 px-3 md:px-8">
+                <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 px-3 md:px-8">
 
                     {imgData.map(({ imageLink }, index) => (
-                        <div key={index}>
+                        <div key={index} className="h-48 w-full max-w-full rounded-lg overflow-hidden cursor-pointer">
                             <img
-                                className="h-40 w-full max-w-full rounded-lg object-cover object-center"
+                                className="h-48 w-full max-w-full hover:scale-110 transition-all duration-500 object-cover object-center"
                                 src={imageLink}
                                 alt="gallery-photo"
                             />
