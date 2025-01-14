@@ -7,17 +7,17 @@ export const cardsData = [
   {
     id: 2,
     name: 'EVENT 1',
-    path: '/event1',
+    path: '/mkushi-agri-expo',
   },
   {
     id: 3,
     name: 'EVENT 2',
-    path: '/event2',
+    path: '/copperbelt-show',
   },
   {
     id: 4,
     name: 'EVENT 3',
-    path: '/event3',
+    path: '/lusaka-motor-show',
   }
 ]
 
@@ -36,8 +36,8 @@ export const headerButtons = [
   },
   {
     id: 3,
-    name: 'Events',
-    pathName: 'events',
+    name: 'Our Magazines',
+    pathName: 'magazines',
     isClicked: false
   },
   {
