@@ -29,6 +29,14 @@ const About = () => {
       </section>
 
       <section>
+        <ul>
+          <li>
+            
+          </li>
+        </ul>
+      </section>
+
+      <section>
         <Partners />
       </section>
 

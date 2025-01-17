@@ -2,53 +2,61 @@ export const cardsData = [
   {
     id: 1,
     name: 'MAGAZINE',
+    date: null,
     path: '/magazines',
+    headerNumber:3
   },
   {
     id: 2,
-    name: 'EVENT 1',
+    name: 'MUKSHI AGRI EXPO',
+    date: '4th 5th 6th of April',
     path: '/mkushi-agri-expo',
+    headerNumber:null
   },
   {
     id: 3,
-    name: 'EVENT 2',
+    name: 'COPPERBELT MOTOR AND MINING SHOW',
+    date: '16th 17th 18th of May',
     path: '/copperbelt-show',
+    headerNumber:null
   },
   {
     id: 4,
-    name: 'EVENT 3',
+    name: 'LUSAKA MOTOR SHOW',
+    date: '5th 6th 7th of Sept',
     path: '/lusaka-motor-show',
+    headerNumber:null
   }
 ]
 
 export const headerButtons = [
   {
     id: 1,
-    name: 'Home',
+    name: 'HOME',
     pathName: '/',
-    isClicked: true
+    isClicked: true,
   },
   {
     id: 2,
-    name: 'Gallery',
+    name: 'GALLERY',
     pathName: 'gallery',
     isClicked: false
   },
   {
     id: 3,
-    name: 'Our Magazines',
+    name: 'OUR MAGAZINES',
     pathName: 'magazines',
     isClicked: false
   },
   {
     id: 4,
-    name: 'About',
+    name: 'ABOUT US',
     pathName: 'about',
     isClicked: false
   },
   {
     id: 5,
-    name: 'Contact',
+    name: 'CONTACT',
     pathName: 'contact',
     isClicked: false
   },
@@ -130,5 +138,27 @@ export const faqData = [
     id: 4,
     title: 'What is your cancellation policy?',
     content: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.z'
+  },
+]
+
+export const venueData = [
+
+  {
+    id:1,
+    name:'Forest Inn Airstrip/ Fika Lodge',
+    imgSrc:'images/venue1-image2.jpg',
+    link:'https://maps.app.goo.gl/j8ST8hkqEQanpTaK8'
+  },
+  {
+    id:2,
+    name:'Garden Court Kitwe',
+    imgSrc:'images/venue-2.jpg',
+    link:'https://maps.app.goo.gl/865zAVY1NhTZ8fsr8'
+  },
+  {
+    id:3,
+    name:'Lusaka Polo Club',
+    imgSrc:'images/venue1-image1.jpg',
+    link:'https://maps.app.goo.gl/Wv3SSttB9PMKvUgz8'
   },
 ]

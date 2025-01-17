@@ -17,7 +17,7 @@ const Event3 = () => {
                     </video>
                 </div>
                 <div>
-                    <h1 className="text-red-800 text-xl font-semibold">This January in LUSAKA</h1>
+                    <h1 className="text-red-800 text-xl font-semibold">This September in LUSAKA</h1>
                     <p className="text-gray-600 max-lg:text-justify max-sm:text-[15px]">
                         Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultri
                         Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis ac

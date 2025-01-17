@@ -48,7 +48,7 @@ const Header = () => {
             {
               headerButtons.map((item, i) => (
                 <li key={i} className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)' onClick={()=>handlePageRedirect(item)}
-                  className={` font-medium text-[17px] block ${selectedButton === item.id ? 'text-orange-100':'text-black'}`} >{item.name}</a></li>
+                  className={` font-medium text-[16px] max-md:text-[15px] block ${selectedButton === item.id ? 'text-orange-100':'text-black'}`} >{item.name}</a></li>
               ))
             }
 

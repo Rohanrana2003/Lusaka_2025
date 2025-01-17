@@ -6,6 +6,7 @@ import { useContext, useEffect } from "react";
 import MyContext from "../context/MyContext";
 import Faq from "./subComponents/Faq";
 import Partners from "./subComponents/Partners";
+import Venues from "./subComponents/Venues";
 
 const Home = () => {
 
@@ -17,8 +18,9 @@ const Home = () => {
   }, [])
 
 
-  const navigatePath = (item) =>{
+  const navigatePath = (item) => {
     navigate(item.path)
+    setSelectedButton(item.headerNumber)
   }
 
   const navigateToAbout = () => {
@@ -27,20 +29,21 @@ const Home = () => {
   }
 
   return (
-    <div className="font-mono bg-[#fff]">
+    <div className="font-mono bg-[#C4DFE6]">
       {/* 4 tabs */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-sm:p-0 p-10 ">
         {
           cardsData.map((item) => (
             <div className={`relative group max-w-[650px] h-[500px] max-md:h-[350px] mx-6 my-2 bg-cover cursor-pointer 
               flex justify-center items-center transition-all duration-700 bg-center 
-              before:absolute before:w-full before:h-full before:inset-0 before:bg-black/45 hover:before:bg-black/65 before:transition-all before:duration-700 before:z-20`} key={item.id}>
+              before:absolute before:w-full before:h-full before:inset-0 before:bg-black/60 hover:before:bg-black/75 before:transition-all before:duration-700 before:z-20`} key={item.id}>
 
-              <img className="absolute w-full h-full inset-0 object-cover object-center transition-all duration-700 z-10" src={`images/main-${item.id}.jpg`}/>
+              <img className="absolute w-full h-full inset-0 object-cover object-center transition-all duration-700 z-10" src={`images/main-${item.id}.jpg`} />
 
-              <div className="absolute z-20 flex flex-col gap-32 items-center  text-white transition-all duration-300 group-hover:-translate-y-4">
-                <p className="font-bold text-5xl">{item.name}</p>
-                <button className="transition-all duration-300 text-xl font-semibold bg-transparent hover:bg-[#66A5AD] hover:border-transparent py-4 px-8 border border-white" onClick={()=>navigatePath(item)}>Click</button>
+              <div className="absolute z-20 flex flex-col max-md:gap-16 gap-32 items-center  text-white transition-all duration-300 group-hover:-translate-y-4">
+                <p className="font-semibold text-[34px] max-md:text-[36px] px-5 leading-none text-center ">{item.name}</p>
+                {/* <p className="text-lg px-5 leading-none text-center text-lime-400">{item.date}</p> */}
+                <button className="transition-all duration-300 text-xl font-semibold bg-transparent hover:bg-[#66A5AD] hover:border-transparent py-4 px-8 border border-white" onClick={() => navigatePath(item)}>Click</button>
               </div>
             </div>
           ))
@@ -68,8 +71,8 @@ const Home = () => {
         <Stats />
       </section>
 
-       {/* Our Partners */}
-       <section>
+      {/* Our Partners */}
+      <section>
         <Partners />
       </section>
 
@@ -78,8 +81,10 @@ const Home = () => {
         <Faq />
       </section>
 
-     
-
+      {/* Venues */}
+      <section>
+        <Venues />
+      </section>
 
     </div>
   );

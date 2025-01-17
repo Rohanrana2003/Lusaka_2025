@@ -9,7 +9,6 @@ import Gallery from './components/Gallery';
 import MyContext from './context/MyContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Events from './components/Events';
 import Event3 from './components/subComponents/Event3';
 import Magazine from './components/Magazine';
 import Event2 from './components/subComponents/Event2';
@@ -31,15 +30,14 @@ function App() {
 
         <Route path='/' element={<Home />} />
 
-        <Route path='/events' element={<Events />} />
-
         <Route path='/gallery' element={<Gallery />} />
+
+        <Route path='/magazines' element={<Magazine />} />
 
         <Route path='/about' element={<About />} />
 
         <Route path='/contact' element={<Contact />} />
 
-        <Route path='/magazines' element={<Magazine />} />
         <Route path='/mkushi-agri-expo' element={<Event1 />} />
         <Route path='/copperbelt-show' element={<Event2 />} />
         <Route path='/lusaka-motor-show' element={<Event3 />} />
