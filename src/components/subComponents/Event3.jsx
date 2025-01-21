@@ -46,7 +46,7 @@ const Event3 = () => {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22397.964841544406!2d28.299848048232974!3d-15.402466000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b5b981ef0af%3A0x773ff9dc24deeea6!2sPolo%20Club!5e1!3m2!1sen!2sin!4v1736758641797!5m2!1sen!2sin" 
                     className="w-[70%] max-md:w-[100%] h-[350px] " allowfullscreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
-                    <div className="flex justify-center items-center text-black text-2xl  bg-[#66A5AD]  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
+                    <div className="flex justify-center items-center text-black text-2xl  bg-[#f9a334]  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
                         ADVERT
                     </div>
                 </div>

@@ -9,7 +9,7 @@ const DefaultGallery = () => {
     }, [])
 
     return (
-        <div className=" bg-[#C4DFE6]">
+        <div className=" bg-[#fff2e0]">
 
             <section className=" flex items-center relative justify-center w-[100%] h-80  before:absolute before:w-full before:h-full 
           before:inset-0 before:bg-black/55 bg-[url('images/about-image3.jpg')] bg-cover bg-bottom">

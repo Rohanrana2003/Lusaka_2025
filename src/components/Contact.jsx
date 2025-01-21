@@ -7,13 +7,13 @@ const Contact = () => {
   }, [])
 
   return (
-    <div className="font-[sans-serif] bg-[#dedede]">
+    <div className="font-[sans-serif] bg-[#fde4c6]">
       <div className="bg-gradient-to-r from-blue-700 to-blue-300 w-full h-60">
         <img src="images/contact-bg.jpg" alt="Banner Image" className="w-full h-full object-cover" />
       </div>
 
       <div className="-mt-20 pb-16 px-4 ">
-        <div className="max-md:m-5 mx-auto max-w-6xl shadow-lg p-5 relative bg-[#C4DFE6] rounded ">
+        <div className="max-md:m-5 mx-auto max-w-6xl shadow-lg p-5 relative bg-[#fff] rounded ">
           <h2 className="text-xl text-gray-800 font-bold text-center">Contact Lusaka Motors Team </h2>
 
           <form className="mt-8 grid sm:grid-cols-2 gap-6  md:p-10">

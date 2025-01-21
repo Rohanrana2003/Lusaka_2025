@@ -29,7 +29,7 @@ const Home = () => {
   }
 
   return (
-    <div className="font-mono bg-[#C4DFE6]">
+    <div className="font-mono bg-[#fff2e0]">
       {/* 4 tabs */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-sm:p-0 p-10 ">
         {
@@ -43,7 +43,7 @@ const Home = () => {
               <div className="absolute z-20 flex flex-col max-md:gap-16 gap-32 items-center  text-white transition-all duration-300 group-hover:-translate-y-4">
                 <p className="font-semibold text-[34px] max-md:text-[36px] px-5 leading-none text-center ">{item.name}</p>
                 {/* <p className="text-lg px-5 leading-none text-center text-lime-400">{item.date}</p> */}
-                <button className="transition-all duration-300 text-xl font-semibold bg-transparent hover:bg-[#66A5AD] hover:border-transparent py-4 px-8 border border-white" onClick={() => navigatePath(item)}>Click</button>
+                <button className="transition-all duration-300 text-xl font-semibold bg-transparent hover:bg-[#f9a334] hover:border-transparent py-4 px-8 border border-white" onClick={() => navigatePath(item)}>Click</button>
               </div>
             </div>
           ))
@@ -57,7 +57,7 @@ const Home = () => {
           <h2 className="text-white sm:text-4xl text-2xl font-bold mb-6">About Lusaka Motors</h2>
           <p className="text-base text-center text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.</p>
           <button type="button" onClick={navigateToAbout}
-            className="px-6 py-3 mt-12 rounded-full text-white text-base tracking-wider font-semibold outline-none  bg-[#66A5AD] hover:bg-[#4a7d84] border-2 border-[#4a7d84] transition-all duration-300">Know More About us...</button>
+            className="px-6 py-3 mt-12 rounded-full text-white text-base tracking-wider font-semibold outline-none  bg-[#f9a334] hover:scale-105 transition-all duration-300">Know More About us...</button>
         </div>
       </section>
 

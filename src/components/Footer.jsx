@@ -3,7 +3,7 @@
 const Footer = () => {
 
   return (
-    <footer className="bg-[#66A5AD] py-12 px-16 font-sans tracking-wide">
+    <footer className="bg-[#f9a334] py-12 px-16 font-sans tracking-wide">
       <div className="max-w-screen-xl mx-auto">
 
         {/* <div className="grid max-sm:grid-cols-1 lg:grid-cols-3 items-center gap-8">

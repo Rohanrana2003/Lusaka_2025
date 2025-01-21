@@ -4,7 +4,7 @@ import { faqIcon } from "../../utils/constants"
 
 const Faq = () => {
     return (
-        <section className="font-sans bg-white ">
+        <section className="font-sans bg-[#fff2e0] ">
             <div className="container py-12 mx-auto">
                 <h1 className="lg:text-3xl mb-10 text-gray-800 font-[sans-serif] text-3xl font-bold text-center">Frequently Asked Questions.</h1>
 
@@ -19,7 +19,7 @@ const Faq = () => {
                         {
                             faqData.map((item) => (
                                 <div key={item.id}>
-                                    <div className="inline-block p-3 text-white bg-[#66A5AD] rounded-lg">{faqIcon}</div>
+                                    <div className="inline-block p-3 text-white bg-[#f9a334] rounded-lg">{faqIcon}</div>
 
                                     <div>
                                         <h1 className="text-xl font-semibold text-gray-700 ">{item.title}</h1>

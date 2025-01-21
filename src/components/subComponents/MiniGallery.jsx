@@ -16,7 +16,7 @@ const MiniGallery = () => {
     }
 
     return (
-        <div className="text-center min-w-full pb-16 bg-[#C4DFE6]">
+        <div className="text-center min-w-full pb-16 bg-[#fff2e0]">
             <h2 className="text-gray-800 font-[sans-serif] text-3xl font-bold pt-16 text-center">Some Unforgettable Memories</h2>
 
             <div className="carousel rounded-box p-10">
@@ -29,7 +29,7 @@ const MiniGallery = () => {
                 }
             </div>
 
-            <button className="flex items-center mx-auto px-8 py-3 text-black text-lg border border-black group"
+            <button className="flex items-center mx-auto px-8 py-3 text-black bg-[#F9A334] text-lg group"
                 onClick={navigateToGallery}>
                 View More
                 <span className=" group-hover:translate-x-3 mt-[2px] transition-all duration-500">{rightArrow}</span>

@@ -3,7 +3,7 @@ import { venueData } from "../../utils/constantData"
 
 const Venues = () => {
     return (
-        <div className='px-10 py-20 bg-[#C4DFE6] font-sans flex flex-col items-center'>
+        <div className='px-10 py-20 bg-[#fff2e0] font-sans flex flex-col items-center'>
             <h1 className="lg:text-3xl mb-3 text-gray-800 font-[sans-serif] text-3xl font-bold text-center">
                 Venue for the Lusaka Happening Events 2025</h1>
 
@@ -22,7 +22,7 @@ const Venues = () => {
                                     <img className=" object-cover" src={venue.imgSrc} />
                                 </div>
 
-                                <p className="text-white font-semibold text-xl px-1 text-center group-hover:text-[#66A5AD] transition-all duration-300">{venue.name}</p>
+                                <p className="text-white font-semibold text-xl px-1 text-center group-hover:text-[#f9a334] transition-all duration-300">{venue.name}</p>
                             </div>
                         </a>
                     ))

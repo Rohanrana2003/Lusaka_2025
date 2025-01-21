@@ -45,7 +45,7 @@ const Event2 = () => {
                 <div className="flex max-md:flex-col justify-center items-center gap-5">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.780581499849!2d28.21172607862173!3d-12.808850099999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x196ce7536607962b%3A0xc6f7e4d1b59ed6d4!2sGarden%20Court%20Kitwe!5e1!3m2!1sen!2sin!4v1736844284943!5m2!1sen!2sin"
                     className="w-[70%] max-md:w-[100%] h-[350px] " allowfullscreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    <div className="flex justify-center items-center text-black text-2xl  bg-[#66A5AD]  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
+                    <div className="flex justify-center items-center text-black text-2xl  bg-[#f9a334]  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
                         ADVERT
                     </div>
                 </div>
