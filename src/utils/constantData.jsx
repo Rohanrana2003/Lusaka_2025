@@ -29,6 +29,7 @@ export const cardsData = [
   }
 ]
 
+
 export const headerButtons = [
   {
     id: 1,
@@ -117,6 +118,34 @@ export const venue1ImgData = [
       'images/venue1-image3.jpg',
   },
 ];
+
+export const aboutData = [
+  {
+    id: 1,
+    content: 'Promoting and Making Awareness about Organic Farming'
+  },
+  {
+    id: 2,
+    content: 'Role of Renewable Energy into Agriculture Industries'
+  },
+  {
+    id: 3,
+    content: 'Sustainable Farming through Innovation and Technology'
+  },
+  {
+    id: 4,
+    content: 'Promoting Women Self Aid Group in Rural Area'
+  },
+  {
+    id: 6,
+    content: 'To enable cross platform knowledge exchange'
+  },
+  {
+    id: 7,
+    content: 'To acknowledge / appreciate the technological / innovative developments'
+  },
+  
+]
 
 export const faqData = [
   {

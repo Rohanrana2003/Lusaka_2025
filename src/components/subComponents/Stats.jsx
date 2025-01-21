@@ -4,7 +4,7 @@
 const Stats = () => {
 
   return (
-    <div className=" relative bg-[url('images/stats-image.jpg')] bg-center bg-cover bg-fixed before:absolute before:w-full before:h-full before:inset-0 before:bg-black/65 z-10 before:-z-10   p-8 min-h-[350px] flex flex-col items-center justify-center font-[sans-serif]">
+    <div className=" relative bg-[url('images/galllery-image4.jpg')] bg-center bg-cover bg-fixed before:absolute before:w-full before:h-full before:inset-0 before:bg-black/65 z-10 before:-z-10   p-8 min-h-[350px] flex flex-col items-center justify-center font-[sans-serif]">
       <h2 className=" text-4xl font-semibold mb-16 text-center text-[#fff]">OUR  ACHIEVEMENTS</h2>
       <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 max-lg:gap-12">
         <div className="text-center">
