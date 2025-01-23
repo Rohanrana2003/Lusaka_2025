@@ -16,8 +16,8 @@ const MiniGallery = () => {
     }
 
     return (
-        <div className="text-center min-w-full font-[sans-serif] pb-16 bg-[#fff2e0]">
-            <h2 className="text-gray-800 text-3xl font-bold pt-16 text-center">Some Unforgettable Memories</h2>
+        <div className="text-center min-w-full font-[sans-serif] py-24 bg-[#fff2e0]">
+            <h2 className="text-gray-800 text-3xl font-bold  text-center">Some Unforgettable Memories</h2>
 
             <div className="carousel rounded-box p-10">
                 {

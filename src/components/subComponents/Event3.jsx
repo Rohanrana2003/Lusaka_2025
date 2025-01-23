@@ -12,7 +12,7 @@ const Event3 = () => {
 
     useEffect(() => {
         scrollTo(0, 0)
-      }, [])
+    }, [])
 
     const navigateToGallery = () => {
         navigate('/gallery');
@@ -46,24 +46,29 @@ const Event3 = () => {
 
             </section>
 
+            <section>
+                <h1 className="text-4xl max-md:text-2xl font-bold text-black  text-center">Our Focus Areas</h1>
 
-            <section className="grid grid-cols-4 max-md:grid-cols-1 max-lg:grid-cols-2 text-sm font-semibold text-black mb-20 mt-10 max-lg:gap-10">
+                <hr className="bg-red-800 h-[4px] w-[200px] max-md:w-[150px] mx-auto  rounded-full mt-2 " />
 
-                <div className="flex flex-col justify-center items-center text-center gap-2">
-                    <img className="h-32" src="images/agri-tractor.png" alt="" />
-                    <p className="">Farm <br /> Machanization</p>
-                </div>
-                <div className="flex flex-col justify-center items-center text-center gap-2">
-                    <img className="h-32" src="images/agri-farm.png" alt="" />
-                    <p className="">Farm <br /> Diversification</p>
-                </div>
-                <div className="flex flex-col justify-center items-center text-center gap-2">
-                    <img className="h-32" src="images/agri-earth.png" alt="" />
-                    <p className="">Sustainability and <br /> Carbon</p>
-                </div>
-                <div className="flex flex-col justify-center items-center text-center gap-2">
-                    <img className="h-32" src="images/agri-tech.png" alt="" />
-                    <p className="">Smart Technology <br /> and AI</p>
+                <div className="grid grid-cols-4 max-md:grid-cols-1 max-lg:grid-cols-2 text-sm font-semibold text-black mb-20 mt-10 max-lg:gap-10">
+
+                    <div className="flex flex-col justify-center items-center text-center gap-2">
+                        <img className="h-32" src="images/agri-tractor.png" alt="" />
+                        <p className="">Farm <br /> Machanization</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center text-center gap-2">
+                        <img className="h-32" src="images/agri-farm.png" alt="" />
+                        <p className="">Farm <br /> Diversification</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center text-center gap-2">
+                        <img className="h-32" src="images/agri-earth.png" alt="" />
+                        <p className="">Sustainability and <br /> Carbon</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center text-center gap-2">
+                        <img className="h-32" src="images/agri-tech.png" alt="" />
+                        <p className="">Smart Technology <br /> and AI</p>
+                    </div>
                 </div>
             </section>
 
@@ -92,13 +97,13 @@ const Event3 = () => {
             </section>
 
             <div className="flex max-md:flex-col justify-center py-16 items-center gap-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22397.964841544406!2d28.299848048232974!3d-15.402466000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b5b981ef0af%3A0x773ff9dc24deeea6!2sPolo%20Club!5e1!3m2!1sen!2sin!4v1736758641797!5m2!1sen!2sin"
-                        className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22397.964841544406!2d28.299848048232974!3d-15.402466000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b5b981ef0af%3A0x773ff9dc24deeea6!2sPolo%20Club!5e1!3m2!1sen!2sin!4v1736758641797!5m2!1sen!2sin"
+                    className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
-                    <div className="flex justify-center items-center text-white text-2xl  bg-red-800  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
-                        ADVERT
-                    </div>
+                <div className="flex justify-center items-center text-white text-2xl  bg-red-800  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
+                    ADVERT
                 </div>
+            </div>
 
             <section>
                 <Partners />

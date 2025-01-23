@@ -22,6 +22,7 @@ const Header = () => {
   const handlePageRedirect = (item) =>{
     setSelectedButton(item.id);
     navigate(item.pathName);
+    collapseMenu.current.style.display = 'none'; //Hide side bar after clicking
   }
 
   return (

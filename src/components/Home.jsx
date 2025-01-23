@@ -65,7 +65,7 @@ const Home = () => {
             className="px-6 py-3 mt-12 rounded-full text-white text-base tracking-wider font-semibold outline-none  bg-[#f9a334] hover:scale-105 transition-all duration-300">Know More About us...</button>
         </div>
       </section> */}
-      <div className="mt-8 flex items-center relative justify-center w-[100%] min-h-[70vh] max-md:mt-16 bg-transparent bg-[url('images/mini-about.jpg')] bg-cover bg-center before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 rounded font-[sans-serif] ">
+      <div className="mt-8 flex items-center relative justify-center w-[100%] min-h-[100vh] max-md:mt-16 bg-transparent bg-[url('images/mini-about.jpg')] bg-cover bg-center before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 rounded font-[sans-serif] ">
         <div className="absolute max-w-2xl text-center mx-6">
           <h1 className="text-white sm:text-5xl text-3xl font-extrabold">About Lusaka Happening</h1>
           <div className="my-10">

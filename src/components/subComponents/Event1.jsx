@@ -12,8 +12,8 @@ const Event1 = () => {
     const [, setSelectedButton] = useContext(MyContext);
 
     useEffect(() => {
-        scrollTo(0, 0)
-      }, [])
+        // scrollTo(0, 0)
+    }, [])
 
     const navigateToGallery = () => {
         navigate('/gallery');
@@ -40,7 +40,7 @@ const Event1 = () => {
                         Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultri
                         Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis ac
                     </p>
-                </div> 
+                </div>
             </section>
 
             <section className="bg-green-600 w-[90vw] py-10 px-10 max-md:px-4 mx-auto text-white flex justify-center flex-col items-center gap-4 mb-16">
@@ -49,23 +49,29 @@ const Event1 = () => {
 
             </section>
 
-            <section className="grid grid-cols-4 max-md:grid-cols-1 max-lg:grid-cols-2 text-sm font-semibold text-black mb-20 mt-10 max-lg:gap-10">
+            <section>
+                <h1 className="text-4xl max-md:text-2xl font-bold text-black  text-center">Our Focus Areas</h1>
 
-                <div className="flex flex-col justify-center items-center text-center gap-2">
-                    <img className="h-32" src="images/agri-tractor.png" alt="" />
-                    <p className="">Farm <br /> Machanization</p>
-                </div>
-                <div className="flex flex-col justify-center items-center text-center gap-2">
-                    <img className="h-32" src="images/agri-farm.png" alt="" />
-                    <p className="">Farm <br /> Diversification</p>
-                </div>
-                <div className="flex flex-col justify-center items-center text-center gap-2">
-                    <img className="h-32" src="images/agri-earth.png" alt="" />
-                    <p className="">Sustainability and <br /> Carbon</p>
-                </div>
-                <div className="flex flex-col justify-center items-center text-center gap-2">
-                    <img className="h-32" src="images/agri-tech.png" alt="" />
-                    <p className="">Smart Technology <br /> and AI</p>
+                <hr className="bg-green-500 h-[4px] w-[200px] max-md:w-[150px] mx-auto  rounded-full mt-2 " />
+
+                <div className="grid grid-cols-4 max-md:grid-cols-1 max-lg:grid-cols-2 text-sm font-semibold text-black mb-20 mt-10 max-lg:gap-10">
+
+                    <div className="flex flex-col justify-center items-center text-center gap-2">
+                        <img className="h-32" src="images/agri-tractor.png" alt="" />
+                        <p className="">Farm <br /> Machanization</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center text-center gap-2">
+                        <img className="h-32" src="images/agri-farm.png" alt="" />
+                        <p className="">Farm <br /> Diversification</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center text-center gap-2">
+                        <img className="h-32" src="images/agri-earth.png" alt="" />
+                        <p className="">Sustainability and <br /> Carbon</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center text-center gap-2">
+                        <img className="h-32" src="images/agri-tech.png" alt="" />
+                        <p className="">Smart Technology <br /> and AI</p>
+                    </div>
                 </div>
             </section>
 
@@ -95,12 +101,12 @@ const Event1 = () => {
             </section>
 
             <div className="flex max-md:flex-col justify-center py-16 items-center gap-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.169465913492!2d29.154204173433236!3d-13.721249575331374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1914e5553c0f6139%3A0xc7516e91ea86bdec!2sFika%20Lodge!5e1!3m2!1sen!2sin!4v1736843819747!5m2!1sen!2sin"
-                        className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    <div className="flex justify-center items-center text-black text-2xl  bg-green-600  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
-                        ADVERT
-                    </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.169465913492!2d29.154204173433236!3d-13.721249575331374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1914e5553c0f6139%3A0xc7516e91ea86bdec!2sFika%20Lodge!5e1!3m2!1sen!2sin!4v1736843819747!5m2!1sen!2sin"
+                    className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <div className="flex justify-center items-center text-black text-2xl  bg-green-600  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
+                    ADVERT
                 </div>
+            </div>
 
             <section>
                 <Partners />

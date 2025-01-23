@@ -23,7 +23,7 @@ const About = () => {
       <section className=" p-10 max-md:px-5 px-16 text-justify grid max-md:grid-cols-1 grid-cols-2 items-center">
         <img className="ma-md:hidden max-md:p-5 max-md:-mb-10 rounded-lg max-sm:rounded-[25px]" src="images/about-image2.jpg" />
         <div className="flex flex-col items-center rounded md:rounded-r-lg text-[#000] bg-[#f9a334] max-md:p-5 p-10 shadow md:shadow-black">
-          <i className="max-md:text-2xl text-3xl mb-2 text-white">Know About Us...</i>
+          <i className="max-md:text-2xl text-3xl mb-2 ">Know About Us...</i>
           <p className="h-[1px] max-md:w-24 rounded-full w-32 bg-[#C4EFD6] mb-3"></p>
           <i className="max-sm:text-[14px]">&quot;Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultri&quot;</i>
         </div>
