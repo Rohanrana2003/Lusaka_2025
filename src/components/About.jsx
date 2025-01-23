@@ -25,12 +25,12 @@ const About = () => {
         <div className="flex flex-col items-center rounded md:rounded-r-lg text-[#000] bg-[#f9a334] max-md:p-5 p-10 shadow md:shadow-black">
           <i className="max-md:text-2xl text-3xl mb-2 text-white">Know About Us...</i>
           <p className="h-[1px] max-md:w-24 rounded-full w-32 bg-[#C4EFD6] mb-3"></p>
-          <i className="max-sm:text-[15px]">&quot;Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultri&quot;</i>
+          <i className="max-sm:text-[14px]">&quot;Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultri&quot;</i>
         </div>
       </section>
 
       <section className="w-full py-10 flex flex-col justify-center items-center gap-5 text-center text-black px-10 max-md:px-3">
-        <h1 className="text-3xl max-sm:text-2xl font-bold  max-sm:w-[70%]">Lusaka Happening aims to...</h1>
+        <h1 className="text-4xl max-sm:text-2xl font-bold  max-sm:w-[70%]">Lusaka Happening aims to...</h1>
 
         <ul className="text-left text-[22px] max-sm:pl-2 max-sm:text-[16px]">
           {

@@ -1,7 +1,7 @@
 export const cardsData = [
   {
     id: 1,
-    name: 'MAGAZINE',
+    name: 'OUR MAGAZINES',
     date: null,
     path: '/magazines',
     headerNumber:3
@@ -51,7 +51,7 @@ export const headerButtons = [
   },
   {
     id: 4,
-    name: 'ABOUT US',
+    name: 'ABOUT',
     pathName: 'about',
     isClicked: false
   },
