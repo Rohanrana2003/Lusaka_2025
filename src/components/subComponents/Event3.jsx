@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { venue1ImgData } from "../../utils/constantData"
 import Partners from "./Partners"
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import MyContext from "../../context/MyContext";
 import { rightArrow } from "../../utils/constants";
 
@@ -9,6 +9,10 @@ import { rightArrow } from "../../utils/constants";
 const Event3 = () => {
     const navigate = useNavigate();
     const [, setSelectedButton] = useContext(MyContext);
+
+    useEffect(() => {
+        scrollTo(0, 0)
+      }, [])
 
     const navigateToGallery = () => {
         navigate('/gallery');
@@ -63,7 +67,7 @@ const Event3 = () => {
                 </div>
             </section>
 
-            <section className="px-5 pb-20 sm:px-20 ">
+            <section className="px-5 py-16 bg-slate-200 sm:px-20 ">
                 <h1 className=" text-4xl max-md:text-2xl font-bold text-black  text-center">
                     Where the <span className="text-red-800 '">LUSAKA MOTOR SHOW</span> will Take Place</h1>
                 <div className="carousel rounded-box p-10 py-5 flex lg:justify-center">
@@ -79,13 +83,15 @@ const Event3 = () => {
                         ))
                     }
                 </div>
-                <button className="flex items-center mx-auto mb-16 px-8 py-3 text-white bg-red-800 text-sm group"
+                <button className="flex items-center mx-auto px-8 py-3 text-white bg-red-800 text-sm group"
                     onClick={navigateToGallery}>
                     View More
                     <span className=" group-hover:translate-x-3 mt-[2px] transition-all duration-500">{rightArrow}</span>
                 </button>
 
-                <div className="flex max-md:flex-col justify-center items-center gap-5">
+            </section>
+
+            <div className="flex max-md:flex-col justify-center py-16 items-center gap-5">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22397.964841544406!2d28.299848048232974!3d-15.402466000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b5b981ef0af%3A0x773ff9dc24deeea6!2sPolo%20Club!5e1!3m2!1sen!2sin!4v1736758641797!5m2!1sen!2sin"
                         className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
@@ -93,8 +99,6 @@ const Event3 = () => {
                         ADVERT
                     </div>
                 </div>
-
-            </section>
 
             <section>
                 <Partners />

@@ -5,7 +5,7 @@ import { imgData } from "../utils/constantData";
 const DefaultGallery = () => {
 
     useEffect(() => {
-        // scrollTo(0, 0)
+        scrollTo(0, 0)
     }, [])
 
     return (

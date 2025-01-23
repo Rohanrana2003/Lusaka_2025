@@ -3,7 +3,7 @@ import { useEffect } from "react"
 const Contact = () => {
 
   useEffect(() => {
-    // scrollTo(0, 0)
+    scrollTo(0, 0)
   }, [])
 
   return (

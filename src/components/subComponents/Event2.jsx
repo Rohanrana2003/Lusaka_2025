@@ -1,6 +1,6 @@
 import { venue1ImgData } from "../../utils/constantData"
 import Partners from "./Partners"
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import MyContext from "../../context/MyContext";
 import { useNavigate } from "react-router-dom";
 import { rightArrow } from "../../utils/constants";
@@ -10,6 +10,10 @@ const Event2 = () => {
 
     const navigate = useNavigate();
     const [, setSelectedButton] = useContext(MyContext);
+
+    useEffect(() => {
+        scrollTo(0, 0)
+      }, [])
 
     const navigateToGallery = () => {
         navigate('/gallery');
@@ -63,7 +67,7 @@ const Event2 = () => {
                 </div>
             </section>
 
-            <section className="px-5 pb-20 sm:px-20 ">
+            <section className="px-5 py-16 bg-slate-200 sm:px-20 ">
                 <h1 className=" text-4xl max-md:text-2xl font-bold text-black  text-center">
                     Where the <span className="text-red-800 '">COPPERBELT MOTOR AND MINING SHOW</span> will Take Place</h1>
                 <div className="carousel rounded-box p-10 py-5 flex lg:justify-center">
@@ -79,21 +83,23 @@ const Event2 = () => {
                         ))
                     }
                 </div>
-                <button className="flex items-center mx-auto mb-16 px-8 py-3 text-white bg-red-800 text-sm group"
+                <button className="flex items-center mx-auto px-8 py-3 text-white bg-red-800 text-sm group"
                     onClick={navigateToGallery}>
                     View More
                     <span className=" group-hover:translate-x-3 mt-[2px] transition-all duration-500">{rightArrow}</span>
                 </button>
 
-                <div className="flex max-md:flex-col justify-center items-center gap-5">
+                
+
+            </section>
+
+            <div className="flex max-md:flex-col justify-center py-16 items-center gap-5">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.780581499849!2d28.21172607862173!3d-12.808850099999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x196ce7536607962b%3A0xc6f7e4d1b59ed6d4!2sGarden%20Court%20Kitwe!5e1!3m2!1sen!2sin!4v1736844284943!5m2!1sen!2sin"
                         className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     <div className="flex justify-center items-center text-white text-2xl  bg-red-800  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
                         ADVERT
                     </div>
                 </div>
-
-            </section>
 
             <section>
                 <Partners />

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { venue1ImgData } from "../../utils/constantData"
 import { rightArrow } from "../../utils/constants"
 import Partners from "./Partners"
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import MyContext from "../../context/MyContext";
 
 
@@ -10,6 +10,10 @@ const Event1 = () => {
 
     const navigate = useNavigate();
     const [, setSelectedButton] = useContext(MyContext);
+
+    useEffect(() => {
+        scrollTo(0, 0)
+      }, [])
 
     const navigateToGallery = () => {
         navigate('/gallery');
@@ -65,7 +69,7 @@ const Event1 = () => {
                 </div>
             </section>
 
-            <section className="px-5 pb-20 sm:px-20 ">
+            <section className="px-5 py-16   sm:px-20 bg-slate-200 ">
                 <h1 className=" text-4xl max-md:text-2xl font-bold text-black  text-center">
                     Where the <span className="text-green-600 '">MUKSHI AGRI EXPO EVENT</span> will Take Place</h1>
                 <div className="carousel rounded-box px-10 py-5 flex lg:justify-center">
@@ -82,21 +86,21 @@ const Event1 = () => {
                     }
 
                 </div>
-                <button className="flex items-center mx-auto mb-16 px-8 py-3 text-white bg-green-600 text-sm group"
+                <button className="flex items-center mx-auto px-8 py-3 text-white bg-green-600 text-sm group"
                     onClick={navigateToGallery}>
                     View More
                     <span className=" group-hover:translate-x-3 mt-[2px] transition-all duration-500">{rightArrow}</span>
                 </button>
 
-                <div className="flex max-md:flex-col justify-center items-center gap-5">
+            </section>
+
+            <div className="flex max-md:flex-col justify-center py-16 items-center gap-5">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.169465913492!2d29.154204173433236!3d-13.721249575331374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1914e5553c0f6139%3A0xc7516e91ea86bdec!2sFika%20Lodge!5e1!3m2!1sen!2sin!4v1736843819747!5m2!1sen!2sin"
                         className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     <div className="flex justify-center items-center text-black text-2xl  bg-green-600  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
                         ADVERT
                     </div>
                 </div>
-
-            </section>
 
             <section>
                 <Partners />
