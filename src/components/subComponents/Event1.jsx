@@ -12,7 +12,7 @@ const Event1 = () => {
     const [, setSelectedButton] = useContext(MyContext);
 
     useEffect(() => {
-        scrollTo(0, 0)
+        // scrollTo(0, 0)
     }, [])
 
     const navigateToGallery = () => {
@@ -100,10 +100,22 @@ const Event1 = () => {
 
             </section>
 
+            {/* Tickets booking section */}
+            <section className="flex items-center relative justify-center w-[100%] min-h-[80vh] bg-transparent bg-[url('images/galllery-image3.jpg')] bg-cover bg-center before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 rounded font-[sans-serif] ">
+                <div className="absolute text-center mx-6">
+                    <h1 className="text-white sm:text-5xl text-3xl font-extrabold mb-20">GRAB YOUR <span className="text-green-500">TICKETS</span> NOW !</h1>
+                    
+                    <button type="button"
+                        className="px-10 py-5 rounded tracking-wider font-semibold border border-gray-500  outline-none hover:border-transparent hover:bg-green-900 bg-green-600  text-white transition-all duration-300 text-base">
+                       BOOK NOW
+                    </button>
+                </div>
+            </section>
+
             <div className="flex max-md:flex-col justify-center py-16 items-center gap-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.169465913492!2d29.154204173433236!3d-13.721249575331374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1914e5553c0f6139%3A0xc7516e91ea86bdec!2sFika%20Lodge!5e1!3m2!1sen!2sin!4v1736843819747!5m2!1sen!2sin"
                     className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                <div className="flex justify-center items-center text-black text-2xl  bg-green-600  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
+                <div className="flex justify-center items-center text-white text-2xl  bg-green-600  w-[20%]  max-md:w-[60%] max-md:h-[300px] h-[350px] ">
                     ADVERT
                 </div>
             </div>

@@ -96,6 +96,18 @@ const Event3 = () => {
 
             </section>
 
+            {/* Tickets booking section */}
+            <section className="flex items-center relative justify-center w-[100%] min-h-[80vh] max-md:mt-16 bg-transparent bg-[url('images/galllery-image7.jpg')] bg-cover bg-center before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 rounded font-[sans-serif] ">
+                <div className="absolute text-center mx-6">
+                    <h1 className="text-white sm:text-5xl text-3xl font-extrabold mb-20">GRAB YOUR <span className="">TICKETS</span> NOW !</h1>
+                    
+                    <button type="button"
+                        className="px-10 py-5 rounded text-sm tracking-wider font-semibold border border-gray-500  outline-none hover:border-transparent hover:bg-red-900 bg-red-700  text-white transition-all duration-300">
+                       BOOK NOW
+                    </button>
+                </div>
+            </section>
+
             <div className="flex max-md:flex-col justify-center py-16 items-center gap-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22397.964841544406!2d28.299848048232974!3d-15.402466000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b5b981ef0af%3A0x773ff9dc24deeea6!2sPolo%20Club!5e1!3m2!1sen!2sin!4v1736758641797!5m2!1sen!2sin"
                     className="w-[70%] max-md:w-[100%] h-[350px] " allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
