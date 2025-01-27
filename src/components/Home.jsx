@@ -25,12 +25,12 @@ const Home = () => {
 
   const navigateToAbout = () => {
     navigate('/about');
-    setSelectedButton(4)
+    setSelectedButton(6)
   }
 
   const navigateToContact = () => {
     navigate('/contact');
-    setSelectedButton(5)
+    setSelectedButton(7)
   }
 
   return (

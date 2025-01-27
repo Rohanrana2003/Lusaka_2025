@@ -1,12 +1,13 @@
-import { useContext, useRef } from "react"
-import { barIcon, crossIcon, facebookIcon, linkedinIcon, xIcon } from "../utils/constants"
+import { useContext, useRef, useState } from "react"
+import { barIcon, crossIcon, downArrow, facebookIcon, linkedinIcon, xIcon } from "../utils/constants"
 import { useNavigate } from "react-router-dom";
 import { headerButtons } from "../utils/constantData";
 import MyContext from "../context/MyContext";
 
 const Header = () => {
 
-  const [selectedButton, setSelectedButton] = useContext(MyContext); 
+  const [selectedButton, setSelectedButton] = useContext(MyContext);
+  const [showEvents, setShowEvents] = useState(false)
   const collapseMenu = useRef();
   const navigate = useNavigate();
 
@@ -19,11 +20,21 @@ const Header = () => {
     }
   }
 
-  const handlePageRedirect = (item) =>{
+  const handlePageRedirect = (item) => {
+    if(item.pathName === 'events'){
+      return;
+    }
     setSelectedButton(item.id);
     navigate(item.pathName);
     collapseMenu.current.style.display = 'none'; //Hide side bar after clicking
   }
+
+  const showEventsButton = (item) => {
+    if (item.pathName === 'events') {
+      setShowEvents(true);
+    }
+  }
+
 
   return (
     <header className='shadow-md bg-[#f9a334] font-sans tracking-wide relative z-50 '>
@@ -40,16 +51,38 @@ const Header = () => {
           <ul
             className='sm:flex sm:justify-center sm:gap-x-10 max-sm:space-y-3 max-sm:fixed max-sm:bg-[#f9a334] 
               max-sm:w-1/2 max-sm:min-w-[300px] max-sm:top-0 max-sm:left-0 max-sm:p-6 max-sm:h-full max-sm:shadow-md 
-              max-sm:overflow-auto z-50'>
+              max-sm:overflow-auto z-50 '>
             <li className='mb-6 hidden max-sm:block'>
               <a href="javascript:void(0)"><img src="images/logo_black.png" alt="logo" className='w-36' />
               </a>
             </li>
 
+
             {
               headerButtons.map((item, i) => (
-                <li key={i} className='max-sm:border-b max-sm:py-3'><a href='javascript:void(0)' onClick={()=>handlePageRedirect(item)}
-                  className={` font-[600] text-[16px] max-md:text-[15px] block hover:text-white transition-all duration-300 ${selectedButton === item.id ? 'text-white':'text-black'}`} >{item.name}</a></li>
+                <li key={i} className='max-sm:border-b max-sm:py-3 '>
+
+                  <a href='javascript:void(0)' onMouseOver={() => showEventsButton(item)}
+                    onClick={() =>{handlePageRedirect(item); showEventsButton(item)}} onMouseLeave={() => setShowEvents(false)}
+                    className={`flex items-center gap-[3px] font-[600] text-[16px] max-md:text-[15px] 
+                   transition-all duration-300 ${selectedButton === item.id ? 'text-white' : 'text-black'}`} >
+                    {item.name} {item.pathName ==='events'? downArrow:''}
+
+                    {/* dropdown events list */}
+                    {item.subComponents && showEvents &&
+                      <ul className="absolute bg-white w-fit py-2 max-sm:mt-[150px] sm:top-14 max-sm:w-[80%] max-sm:px-1 max-sm:pb-1 max-sm:rounded h-fit z-20 rounded-lg">
+                        {item.subComponents.map((subItem) => (
+                          <li key={subItem.name} onClick={()=>handlePageRedirect(subItem)}
+                            className="text-black px-5 transition-all duration-100 max-sm:mb-1 max-sm:bg-green-900 max-sm:text-white py-1 text-sm hover:bg-green-900 rounded hover:text-white" >
+                            {subItem.name}
+                          </li>
+                        ))}
+                      </ul>
+                    }
+
+                  </a>
+                </li>
+
               ))
             }
 
@@ -65,7 +98,7 @@ const Header = () => {
 
       <section
         className='flex items-center lg:justify-center flex-wrap gap-5 relative pb-3 sm:px-10 px-4 border-gray-500 border-b lg:min-h-[80px] max-lg:min-h-[60px]'>
-        <a className="cursor-pointer max-sm:-mt-4" onClick={() =>{navigate('/'); setSelectedButton(1)}} ><img src='images/logo_black.png' alt="logo"
+        <a className="cursor-pointer max-sm:-mt-4" onClick={() => { navigate('/'); setSelectedButton(1) }} ><img src='images/logo_black.png' alt="logo"
           className=' w-24' />
         </a>
 

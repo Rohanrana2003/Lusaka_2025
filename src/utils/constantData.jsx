@@ -4,28 +4,28 @@ export const cardsData = [
     name: 'OUR MAGAZINES',
     date: null,
     path: '/magazines',
-    headerNumber:3
+    headerNumber: 3
   },
   {
     id: 2,
     name: 'MUKSHI AGRI EXPO',
     date: '4th 5th 6th of April',
     path: '/mkushi-agri-expo',
-    headerNumber:null
+    headerNumber: null
   },
   {
     id: 3,
     name: 'COPPERBELT MOTOR AND MINING SHOW',
     date: '16th 17th 18th of May',
     path: '/copperbelt-show',
-    headerNumber:null
+    headerNumber: null
   },
   {
     id: 4,
     name: 'LUSAKA MOTOR SHOW',
     date: '5th 6th 7th of Sept',
     path: '/lusaka-motor-show',
-    headerNumber:null
+    headerNumber: null
   }
 ]
 
@@ -33,38 +33,67 @@ export const cardsData = [
 export const headerButtons = [
   {
     id: 1,
-    name: 'HOME',
+    name: 'Home',
     pathName: '/',
     isClicked: true,
   },
   {
     id: 2,
-    name: 'GALLERY',
+    name: 'Gallery',
     pathName: 'gallery',
     isClicked: false
   },
   {
     id: 3,
-    name: 'OUR MAGAZINES',
+    name: 'Events 2025',
+    pathName: 'events',
+    isClicked: false,
+    subComponents:[
+      {
+        id: 0,
+        name: 'Mushi Agri Expo',
+        pathName: 'mkushi-agri-expo'
+      },
+      {
+        id: 0,
+        name: 'Copperbelt Show',
+        pathName: 'copperbelt-show'
+      },
+      {
+        id: 0,
+        name: 'Lusaka Motor Show',
+        pathName: 'lusaka-motor-show'
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: 'Offers & Deals',
     pathName: 'magazines',
     isClicked: false
   },
   {
-    id: 4,
-    name: 'ABOUT',
+    id: 5,
+    name: 'Magazines',
+    pathName: 'magazines',
+    isClicked: false
+  },
+  {
+    id: 6,
+    name: 'About',
     pathName: 'about',
     isClicked: false
   },
   {
-    id: 5,
-    name: 'CONTACT',
+    id: 7,
+    name: 'Contact',
     pathName: 'contact',
     isClicked: false
   },
 ]
 
 export const imgData = [
-  
+
   {
     imageLink:
       'images/galllery-image1.jpg',
@@ -104,7 +133,7 @@ export const imgData = [
 ];
 
 export const venue1ImgData = [
-  
+
   {
     imageLink:
       'images/venue1-image1.jpg',
@@ -144,7 +173,7 @@ export const aboutData = [
     id: 7,
     content: 'To acknowledge / appreciate the technological / innovative developments'
   },
-  
+
 ]
 
 export const faqData = [
@@ -173,21 +202,21 @@ export const faqData = [
 export const venueData = [
 
   {
-    id:1,
-    name:'Forest Inn Airstrip/ Fika Lodge',
-    imgSrc:'images/venue1-image2.jpg',
-    link:'https://maps.app.goo.gl/j8ST8hkqEQanpTaK8'
+    id: 1,
+    name: 'Forest Inn Airstrip/ Fika Lodge',
+    imgSrc: 'images/venue1-image2.jpg',
+    link: 'https://maps.app.goo.gl/j8ST8hkqEQanpTaK8'
   },
   {
-    id:2,
-    name:'Garden Court Kitwe',
-    imgSrc:'images/venue-2.jpg',
-    link:'https://maps.app.goo.gl/865zAVY1NhTZ8fsr8'
+    id: 2,
+    name: 'Garden Court Kitwe',
+    imgSrc: 'images/venue-2.jpg',
+    link: 'https://maps.app.goo.gl/865zAVY1NhTZ8fsr8'
   },
   {
-    id:3,
-    name:'Lusaka Polo Club',
-    imgSrc:'images/venue1-image1.jpg',
-    link:'https://maps.app.goo.gl/Wv3SSttB9PMKvUgz8'
+    id: 3,
+    name: 'Lusaka Polo Club',
+    imgSrc: 'images/venue1-image1.jpg',
+    link: 'https://maps.app.goo.gl/Wv3SSttB9PMKvUgz8'
   },
 ]

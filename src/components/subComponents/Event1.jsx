@@ -12,7 +12,7 @@ const Event1 = () => {
     const [, setSelectedButton] = useContext(MyContext);
 
     useEffect(() => {
-        // scrollTo(0, 0)
+        scrollTo(0, 0)
     }, [])
 
     const navigateToGallery = () => {
@@ -44,7 +44,7 @@ const Event1 = () => {
             </section>
 
             <section className="bg-green-600 w-[90vw] py-10 px-10 max-md:px-4 mx-auto text-white flex justify-center flex-col items-center gap-4 mb-16">
-                <h1 className=" text-2xl font-medium text-center">4th, 5th, 6th of April 2025</h1>
+                <h1 className=" text-2xl max-md:text-xl font-medium text-center">4th, 5th, 6th of April 2025</h1>
                 <p className=" text-[15px] max-sm:text-sm text-center"><i>Welcome to India Agri Expo, the only business to business event of its kind offering a single venue interface between Indian & global players in the agrimachinery sector. India Agri Expo envisages showcasing the best and latest in agrimachineries, besides providing an excellent opportunity to Indian and overseas players catering to the entire value chain through vertical based national and international pavilions.</i></p>
 
             </section>
@@ -58,19 +58,19 @@ const Event1 = () => {
 
                     <div className="flex flex-col justify-center items-center text-center gap-2">
                         <img className="h-32" src="images/agri-tractor.png" alt="" />
-                        <p className="">Farm <br /> Machanization</p>
+                        <p className=" text-green-600 font-bold">Farm <br /> Machanization</p>
                     </div>
                     <div className="flex flex-col justify-center items-center text-center gap-2">
                         <img className="h-32" src="images/agri-farm.png" alt="" />
-                        <p className="">Farm <br /> Diversification</p>
+                        <p className=" text-green-600 font-bold">Farm <br /> Diversification</p>
                     </div>
                     <div className="flex flex-col justify-center items-center text-center gap-2">
                         <img className="h-32" src="images/agri-earth.png" alt="" />
-                        <p className="">Sustainability and <br /> Carbon</p>
+                        <p className=" text-green-600 font-bold">Sustainability and <br /> Carbon</p>
                     </div>
                     <div className="flex flex-col justify-center items-center text-center gap-2">
                         <img className="h-32" src="images/agri-tech.png" alt="" />
-                        <p className="">Smart Technology <br /> and AI</p>
+                        <p className=" text-green-600 font-bold">Smart Technology <br /> and AI</p>
                     </div>
                 </div>
             </section>
