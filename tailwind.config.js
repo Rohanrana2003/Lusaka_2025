@@ -12,11 +12,9 @@ export default {
           topBottomShadow: `inset 0 5px 5px -5px #333, 
                       inset 0 -5px 5px -5px #333`
       },
-      
-      
     },
   },
   plugins: [
-    daisyui
+    daisyui,
   ],
 }

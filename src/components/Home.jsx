@@ -55,6 +55,11 @@ const Home = () => {
         }
       </section>
 
+      {/* Advert */}
+      <section className="bg-[#fff2e0] w-[90vw] border ">
+
+      </section>
+
       {/* Short About */}
       {/* <section className="mt-10 relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black/65 max-sm:before:bg-black/55 before:z-10 bg-[url('images/about-mini-image.jpg')] bg-center bg-cover">
 
@@ -77,7 +82,7 @@ const Home = () => {
           <hr className="border-gray-500" />
 
           <div className="mt-10 flex max-sm:flex-col justify-center sm:gap-6 gap-4">
-            <button type="button"  onClick={navigateToContact}
+            <button type="button" onClick={navigateToContact}
               className="px-6 py-3 rounded text-black text-sm tracking-wider font-semibold duration-300 hover:border-gray-500 hover:border border border-transparent outline-none bg-[#F9A334] hover:bg-transparent hover:text-[#F9A334]  transition-all ">
               Contact us
             </button>
@@ -98,20 +103,22 @@ const Home = () => {
       <section>
         <Stats />
       </section>
-
-      {/* Our Partners */}
+      {/* Venues */}
       <section>
-        <Partners />
+        <Venues />
       </section>
+
 
       {/* Faq */}
       <section>
         <Faq />
       </section>
 
-      {/* Venues */}
+
+
+      {/* Our Partners */}
       <section>
-        <Venues />
+        <Partners />
       </section>
 
     </div>

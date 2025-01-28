@@ -37,7 +37,7 @@ const Header = () => {
 
 
   return (
-    <header className='shadow-md bg-[#f9a334] font-sans tracking-wide relative z-50 '>
+    <header className='font-serif shadow-md bg-[#f9a334]  tracking-wide relative z-50 '>
 
       <div className='flex flex-wrap pt-8 max-sm:pt-5 lg:pb-6 px-10 overflow-x-auto '>
 
@@ -87,7 +87,7 @@ const Header = () => {
             }
 
           </ul>
-        </div>
+        </div> 
 
         <div className='flex ml-auto sm:hidden'>
           <button id="toggleOpen" onClick={handleToggleHeader}>
