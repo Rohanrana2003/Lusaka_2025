@@ -4,7 +4,7 @@ import { faqIcon } from "../../utils/constants"
 
 const Faq = () => {
     return (
-        <section className="font-sans bg-[#fff2e0] ">
+        <section className="font-sans bg-slate-200 ">
             <div className="container py-12 mx-auto">
                 <h1 className="lg:text-3xl mb-10 text-gray-800 font-[sans-serif] text-3xl font-bold text-center">Frequently Asked Questions.</h1>
 

@@ -56,7 +56,10 @@ const Home = () => {
       </section>
 
       {/* Advert */}
-      <section className="bg-[#fff2e0] w-[90vw] border ">
+      <section className="bg-[#fff2e0] w-full flex items-center justify-center">
+      <div className="max-sm:mt-6 max-md:w-[80vw] w-[80vw] h-60 bg-[#f9a334] text-4xl flex justify-center items-center text-black">
+        ADVERT
+      </div>
 
       </section>
 
@@ -94,6 +97,12 @@ const Home = () => {
         </div>
       </div>
 
+      
+      {/* Our Partners */}
+      <section>
+        <Partners />
+      </section>
+
       {/* Mini-Gallery */}
       <section>
         <MiniGallery />
@@ -108,17 +117,9 @@ const Home = () => {
         <Venues />
       </section>
 
-
       {/* Faq */}
       <section>
         <Faq />
-      </section>
-
-
-
-      {/* Our Partners */}
-      <section>
-        <Partners />
       </section>
 
     </div>

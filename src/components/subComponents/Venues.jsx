@@ -3,11 +3,11 @@ import { venueData } from "../../utils/constantData"
 
 const Venues = () => {
     return (
-        <div className='px-10 py-20 bg-slate-200 font-sans flex flex-col items-center'>
+        <div className='px-10 py-20 bg-[#fff2e0] font-sans flex flex-col items-center'>
             <h1 className="lg:text-3xl mb-3 text-gray-800 font-[sans-serif] text-3xl font-bold text-center">
                 Venue for the Lusaka Happening Events 2025</h1>
 
-            <p className="text-slate-600 text-xl text-center max-w-[450px] pb-10">Lusaka Happening Events of 2025 will be hosted across
+            <p className="text-slate-600 text-xl max-sm:text-lg text-center max-w-[450px] pb-10">Lusaka Happening Events of 2025 will be hosted across
                 three prime locations</p>
 
             <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-10 max-md:gap-6 ">

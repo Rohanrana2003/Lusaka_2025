@@ -8,7 +8,7 @@ import { partner1, partner2, partner3, partner4, partner5, partner6 } from '../.
 
 const Partners = () => {
     return (
-        <section className="bg-slate-200 text-white max-md:py-10">
+        <section className="bg-[#fff2e0] text-white max-md:py-10">
             <div className="py-4 lg:py-16 mx-auto max-w-screen-xl px-4">
                 <h2 className="mb-4 lg:mb-10 text-3xl font-bold tracking-tight leading-tight md:text-4xl text-gray-800 font-[sans-serif] text-center">OUR PARTNERS</h2>
                 <Swiper
