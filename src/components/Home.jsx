@@ -7,7 +7,6 @@ import MyContext from "../context/MyContext";
 import Faq from "./subComponents/Faq";
 import Partners from "./subComponents/Partners";
 import Venues from "./subComponents/Venues";
-import InfiniteCarousel from "./subComponents/InfiniteCarousel";
 
 const Home = () => {
 
@@ -123,10 +122,7 @@ const Home = () => {
         <Faq />
       </section>
 
-      {/* InfiniteCraousel */}
-      <section>
-        <InfiniteCarousel/>
-      </section>
+     
 
     </div>
   );
