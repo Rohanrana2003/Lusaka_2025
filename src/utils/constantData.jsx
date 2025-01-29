@@ -4,7 +4,7 @@ export const cardsData = [
     name: 'OUR MAGAZINES',
     date: null,
     path: '/magazines',
-    headerNumber: 3
+    headerNumber: 5
   },
   {
     id: 2,
@@ -69,7 +69,7 @@ export const headerButtons = [
   {
     id: 4,
     name: 'Offers & Deals',
-    pathName: 'magazines',
+    pathName: 'offers&deals',
     isClicked: false
   },
   {
@@ -218,5 +218,41 @@ export const venueData = [
     name: 'Lusaka Polo Club',
     imgSrc: 'images/venue1-image1.jpg',
     link: 'https://maps.app.goo.gl/Wv3SSttB9PMKvUgz8'
+  },
+]
+
+export const offersData = [
+  {
+    id:1,
+    src:'images/offer1.webp',
+    title:'Offer of the Year! Corolla Cross Hybrid'
+  },{
+    id:2,
+    src:'images/offer2.webp',
+    title:'Pre-owned company cars  pricelist'
+  },{
+    id:3,
+    src:'images/offer3.webp',
+    title:'Public Service Microfinance Company'
+  },{
+    id:4,
+    src:'images/offer4.webp',
+    title:'Trade-In'
+  },{
+    id:5,
+    src:'images/offer5.webp',
+    title:'Extended Warranty'
+  },{
+    id:6,
+    src:'images/offer6.webp',
+    title:'Offer of the Month'
+  },{
+    id:7,
+    src:'images/offer7.webp',
+    title:'Automark Diplomat Offer'
+  },{
+    id:8,
+    src:'images/offer8.webp',
+    title:'Hino 300 Series (714)'
   },
 ]

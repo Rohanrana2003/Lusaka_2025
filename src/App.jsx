@@ -13,6 +13,7 @@ import Event3 from './components/subComponents/Event3';
 import Magazine from './components/Magazine';
 import Event2 from './components/subComponents/Event2';
 import Event1 from './components/subComponents/Event1';
+import Offers from './components/Offers';
 
 function App() {
   const navigate = useNavigate();
@@ -37,6 +38,7 @@ function App() {
         <Route path='/about' element={<About />} />
 
         <Route path='/contact' element={<Contact />} />
+        <Route path='/offers&deals' element={<Offers />} />
 
         <Route path='/mkushi-agri-expo' element={<Event1 />} />
         <Route path='/copperbelt-show' element={<Event2 />} />

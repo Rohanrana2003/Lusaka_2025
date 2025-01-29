@@ -10,8 +10,8 @@ const Faq = () => {
 
                 <div className="flex flex-col md:flex-row md:gap-16 mt-16 lg:px-10 ">
 
-                    <div className="min-w-[350px] lg:min-w-[450px] max-md:p-10 max-sm:-mt-10">
-                        <img src="images/faq-image.jpg" />
+                    <div className="min-w-[350px] lg:min-w-[450px] max-md:p-10 overflow-hidden rounded-lg max-sm:-mt-10">
+                        <img className="rounded-lg" src="images/faq-image.jpg" />
                     </div>
 
                     <div className=" flex flex-col max-md:px-10 gap-8 md:max-h-[350px] lg:max-h-[430px] overflow-y-auto">
