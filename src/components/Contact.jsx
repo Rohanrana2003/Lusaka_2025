@@ -3,48 +3,48 @@ import { useEffect } from "react"
 const Contact = () => {
 
   useEffect(() => {
-    // scrollTo(0, 0)
+    scrollTo(0, 0)
   }, [])
 
   return (
-    <div className="font-[sans-serif] bg-[#dedede]">
+    <div className="font-[sans-serif] bg-[#ffffff]">
       <div className="bg-gradient-to-r from-blue-700 to-blue-300 w-full h-60">
         <img src="images/contact-bg.jpg" alt="Banner Image" className="w-full h-full object-cover" />
       </div>
 
-      <div className="-mt-20 pb-16 px-4 ">
-        <div className="max-md:m-5 mx-auto max-w-6xl shadow-lg p-5 relative bg-[#C4DFE6] rounded ">
-          <h2 className="text-xl text-gray-800 font-bold text-center">Contact Lusaka Motors Team </h2>
+      <div className="-mt-20 pb-16 px-4 max-sm:px-1 ">
+        <div className="max-md:m-5 mx-auto max-w-6xl shadow-lg p-5 relative bg-slate-200 rounded ">
+          <h2 className="text-2xl mt-5 text-gray-800 font-bold text-center">Contact Lusaka Motors Team </h2>
 
           <form className="mt-8 grid sm:grid-cols-2 gap-6  md:p-10">
             <div>
-              <label className="text-gray-800 text-sm block mb-2">Your Name</label>
+              <label className="text-gray-800 text-base block mb-2">Name</label>
               <input type='text' placeholder='Enter Name'
-                className="w-full rounded py-2.5 px-4 bg-white focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
+                className="w-full text-gray-600 rounded-md py-2.5 px-4 bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
             </div>
             <div>
-              <label className="text-gray-800 text-sm block mb-2">Your Email</label>
+              <label className="text-gray-800 text-base block mb-2">Email</label>
               <input type='email' placeholder='Email'
-                className="w-full rounded py-2.5 px-4 bg-white focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
+                className="w-full text-gray-600 rounded-md py-2.5 px-4 bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
             </div>
             <div>
-              <label className="text-gray-800 text-sm block mb-2">Your Number</label>
+              <label className="text-gray-800 text-base block mb-2">Number</label>
               <input type='email' placeholder='Phone No.'
-                className="w-full rounded py-2.5 px-4 bg-white focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
+                className="w-full text-gray-600 rounded-md py-2.5 px-4 bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
             </div>
             <div>
-              <label className="text-gray-800 text-sm block mb-2">Subject</label>
+              <label className="text-gray-800 text-base block mb-2">Subject</label>
               <input type='text' placeholder='Subject'
-                className="w-full rounded py-2.5 px-4 bg-white focus:bg-[#dcf4f7] border border-gray-300 text-sm focus:border-blue-600 outline-none" />
+                className="w-full text-gray-600 rounded-md py-2.5 px-4 bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
             </div>
             <div className="col-span-full">
-              <label className="text-gray-800 text-sm block mb-2">Message</label>
+              <label className="text-gray-800 text-base block mb-2">Message</label>
               <textarea placeholder='Message' rows="6"
-                className="w-full rounded px-4 border bg-white border-gray-300 text-sm pt-3 focus:border-blue-600 outline-none"></textarea>
+                className="w-full text-gray-600 rounded-md px-4 border bg-white focus:bg-[#fff3e3] border-gray-400 text-sm pt-3 focus:border-[#F9A334] outline-none"></textarea>
             </div>
 
             <button type='button'
-              className="col-span-full text-white w-max bg-[#007bff] hover:bg-blue-600 tracking-wide rounded text-sm px-4 py-2.5 flex mx-auto">
+              className="col-span-full text-white w-max bg-[#ff9100] hover:bg-[#F9A334] tracking-wide rounded text-sm px-4 py-2.5 flex mx-auto">
               <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' className="mr-2 inline" viewBox="0 0 548.244 548.244">
                 <path fillRule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clipRule="evenodd" data-original="#000000" />
               </svg>
@@ -56,8 +56,8 @@ const Contact = () => {
             <div className="container px-6 pb-12 mx-auto">
 
               <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
-                <div className="lg:border-r border-blue-400 ">
-                  <span className="inline-block p-3 text-blue-500 rounded-full bg-white">
+                <div className="lg:border-r border-[#FF9900] ">
+                  <span className="inline-block p-3 text-[#FF9900] rounded-full bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                       stroke="currentColor" className="w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round"
@@ -66,12 +66,12 @@ const Contact = () => {
                   </span>
 
                   <h2 className="mt-4 text-lg font-medium text-gray-800 ">Email</h2>
-                  <p className="mt-2 text-gray-500 ">Our friendly team is here to help.</p>
-                  <p className="mt-2 text-blue-500 ">hello@merakiui.com</p>
+                  <p className="mt-2 text-gray-600 ">Our friendly team is here to help.</p>
+                  <p className="mt-2 text-gray-600">hello@merakiui.com</p>
                 </div>
 
                 <div>
-                  <span className="inline-block p-3 text-blue-500 rounded-full bg-white">
+                  <span className="inline-block p-3 text-[#FF9900] rounded-full bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                       stroke="currentColor" className="w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -81,12 +81,12 @@ const Contact = () => {
                   </span>
 
                   <h2 className="mt-4 text-lg font-medium text-gray-800">Office</h2>
-                  <p className="mt-2 text-gray-500">Come say hello at our office HQ.</p>
-                  <p className="mt-2 text-blue-500">100 Smith Street Collingwood VIC 3066 AU</p>
+                  <p className="mt-2 text-gray-600">Come say hello at our office HQ.</p>
+                  <p className="mt-2 text-gray-600">100 Smith Street Collingwood VIC 3066 AU</p>
                 </div>
 
-                <div  className="lg:border-l border-blue-400 lg:pl-10">
-                  <span className="inline-block p-3 text-blue-500 rounded-full bg-white">
+                <div  className="lg:border-l border-[#FF9900] lg:pl-10">
+                  <span className="inline-block p-3 text-[#FF9900] rounded-full bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                       stroke="currentColor" className="w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round"
@@ -95,8 +95,8 @@ const Contact = () => {
                   </span>
 
                   <h2 className="mt-4 text-lg font-medium text-gray-800 ">Phone</h2>
-                  <p className="mt-2 text-gray-500">Mon-Fri from 8am to 5pm.</p>
-                  <p className="mt-2 text-blue-500">+1 (555) 000-0000</p>
+                  <p className="mt-2 text-gray-600">Mon-Fri from 8am to 5pm.</p>
+                  <p className="mt-2 text-gray-600">+1 (555) 000-0000</p>
                 </div>
                 
               </div>

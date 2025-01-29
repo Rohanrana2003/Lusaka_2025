@@ -1,32 +1,41 @@
 export const cardsData = [
   {
     id: 1,
-    name: 'MAGAZINE',
+    name: 'OUR MAGAZINES',
+    date: null,
     path: '/magazines',
+    headerNumber: 5
   },
   {
     id: 2,
-    name: 'EVENT 1',
+    name: 'MUKSHI AGRI EXPO',
+    date: '4th 5th 6th of April',
     path: '/mkushi-agri-expo',
+    headerNumber: null
   },
   {
     id: 3,
-    name: 'EVENT 2',
+    name: 'COPPERBELT MOTOR AND MINING SHOW',
+    date: '16th 17th 18th of May',
     path: '/copperbelt-show',
+    headerNumber: null
   },
   {
     id: 4,
-    name: 'EVENT 3',
+    name: 'LUSAKA MOTOR SHOW',
+    date: '5th 6th 7th of Sept',
     path: '/lusaka-motor-show',
+    headerNumber: null
   }
 ]
+
 
 export const headerButtons = [
   {
     id: 1,
     name: 'Home',
     pathName: '/',
-    isClicked: true
+    isClicked: true,
   },
   {
     id: 2,
@@ -36,18 +45,47 @@ export const headerButtons = [
   },
   {
     id: 3,
-    name: 'Our Magazines',
+    name: 'Events 2025',
+    pathName: 'events',
+    isClicked: false,
+    subComponents:[
+      {
+        id: 0,
+        name: 'Mushi Agri Expo',
+        pathName: 'mkushi-agri-expo'
+      },
+      {
+        id: 0,
+        name: 'Copperbelt Show',
+        pathName: 'copperbelt-show'
+      },
+      {
+        id: 0,
+        name: 'Lusaka Motor Show',
+        pathName: 'lusaka-motor-show'
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: 'Offers & Deals',
+    pathName: 'offers&deals',
+    isClicked: false
+  },
+  {
+    id: 5,
+    name: 'Magazines',
     pathName: 'magazines',
     isClicked: false
   },
   {
-    id: 4,
+    id: 6,
     name: 'About',
     pathName: 'about',
     isClicked: false
   },
   {
-    id: 5,
+    id: 7,
     name: 'Contact',
     pathName: 'contact',
     isClicked: false
@@ -55,7 +93,7 @@ export const headerButtons = [
 ]
 
 export const imgData = [
-  
+
   {
     imageLink:
       'images/galllery-image1.jpg',
@@ -95,7 +133,7 @@ export const imgData = [
 ];
 
 export const venue1ImgData = [
-  
+
   {
     imageLink:
       'images/venue1-image1.jpg',
@@ -109,6 +147,34 @@ export const venue1ImgData = [
       'images/venue1-image3.jpg',
   },
 ];
+
+export const aboutData = [
+  {
+    id: 1,
+    content: 'Promoting and Making Awareness about Organic Farming'
+  },
+  {
+    id: 2,
+    content: 'Role of Renewable Energy into Agriculture Industries'
+  },
+  {
+    id: 3,
+    content: 'Sustainable Farming through Innovation and Technology'
+  },
+  {
+    id: 4,
+    content: 'Promoting Women Self Aid Group in Rural Area'
+  },
+  {
+    id: 6,
+    content: 'To enable cross platform knowledge exchange'
+  },
+  {
+    id: 7,
+    content: 'To acknowledge / appreciate the technological / innovative developments'
+  },
+
+]
 
 export const faqData = [
   {
@@ -130,5 +196,63 @@ export const faqData = [
     id: 4,
     title: 'What is your cancellation policy?',
     content: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.z'
+  },
+]
+
+export const venueData = [
+
+  {
+    id: 1,
+    name: 'Forest Inn Airstrip/ Fika Lodge',
+    imgSrc: 'images/venue1-image2.jpg',
+    link: 'https://maps.app.goo.gl/j8ST8hkqEQanpTaK8'
+  },
+  {
+    id: 2,
+    name: 'Garden Court Kitwe',
+    imgSrc: 'images/venue-2.jpg',
+    link: 'https://maps.app.goo.gl/865zAVY1NhTZ8fsr8'
+  },
+  {
+    id: 3,
+    name: 'Lusaka Polo Club',
+    imgSrc: 'images/venue1-image1.jpg',
+    link: 'https://maps.app.goo.gl/Wv3SSttB9PMKvUgz8'
+  },
+]
+
+export const offersData = [
+  {
+    id:1,
+    src:'images/offer1.webp',
+    title:'Offer of the Year! Corolla Cross Hybrid'
+  },{
+    id:2,
+    src:'images/offer2.webp',
+    title:'Pre-owned company cars  pricelist'
+  },{
+    id:3,
+    src:'images/offer3.webp',
+    title:'Public Service Microfinance Company'
+  },{
+    id:4,
+    src:'images/offer4.webp',
+    title:'Trade-In'
+  },{
+    id:5,
+    src:'images/offer5.webp',
+    title:'Extended Warranty'
+  },{
+    id:6,
+    src:'images/offer6.webp',
+    title:'Offer of the Month'
+  },{
+    id:7,
+    src:'images/offer7.webp',
+    title:'Automark Diplomat Offer'
+  },{
+    id:8,
+    src:'images/offer8.webp',
+    title:'Hino 300 Series (714)'
   },
 ]
