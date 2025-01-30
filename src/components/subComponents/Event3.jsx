@@ -20,7 +20,7 @@ const Event3 = () => {
     }
     return (
         <div className="bg-white">
-            <div className="relative flex justify-center text-center items-center w-full h-[300px] bg-center bg-cover bg-[url('images/galllery-image2.jpg')] before:absolute before:z-10 before:w-full before:h-[300px] before:inset-0 max-md:before:bg-black/40 before:bg-black/55">
+            <div className="relative flex justify-center text-center items-center w-full h-[300px] bg-center bg-cover bg-[url('../images/galllery-image2.jpg')] before:absolute before:z-10 before:w-full before:h-[300px] before:inset-0 max-md:before:bg-black/40 before:bg-black/55">
                 <h1 className="bg-black absolute text-red-700  max-md:bg-opacity-50 bg-opacity-70 z-20 text-4xl max-md:text-3xl  font-bold w-fit  py-2 px-4 mx-auto "><i>THE LUSAKA MOTOR SHOW</i> </h1>
             </div>
 
@@ -97,7 +97,7 @@ const Event3 = () => {
             </section>
 
             {/* Tickets booking section */}
-            <section className="flex items-center relative justify-center w-[100%] min-h-[80vh] max-md:mt-16 bg-transparent bg-[url('images/galllery-image7.jpg')] bg-cover bg-center before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 rounded font-[sans-serif] ">
+            <section className="flex items-center relative justify-center w-[100%] min-h-[80vh] max-md:mt-16 bg-transparent bg-[url('../images/galllery-image7.jpg')] bg-cover bg-center before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 rounded font-[sans-serif] ">
                 <div className="absolute text-center mx-6">
                     <h1 className="text-white sm:text-5xl text-3xl font-extrabold mb-20">GRAB YOUR <span className="">TICKETS</span> NOW !</h1>
                     

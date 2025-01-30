@@ -5,7 +5,7 @@ const Offers = () => {
     <div className="bg-[#fff2e0] flex flex-col justify-center items-center">
 
       <section className=" flex items-center relative justify-center w-[100%] h-80  before:absolute before:w-full before:h-full 
-          before:inset-0 before:bg-black/55 bg-[url('images/offer-bg.jpg')] bg-cover bg-center">
+          before:inset-0 before:bg-black/55 bg-[url('../images/offer-bg.jpg')] bg-cover bg-center">
         <h1 className="absolute max-md:text-[38px] max-md:text-center font-serif text-6xl text-white font-semibold">Offers & Deals</h1>
       </section>
 
