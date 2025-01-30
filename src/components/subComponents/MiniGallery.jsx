@@ -43,7 +43,7 @@ const MiniGallery = () => {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="mySwiper my-2"
+                className="mySwiper mySwiper-gallery my-2"
             >
 
                 {
@@ -57,7 +57,7 @@ const MiniGallery = () => {
 
             </Swiper>
 
-            <button className="flex rounded items-center mx-auto px-8 py-3 text-gray-950 bg-[#F9A334] text-base group"
+            <button className="flex rounded items-center mx-auto max-sm:px-6 max-sm:py-3     max-sm:text-sm px-8 py-3 text-gray-950 bg-[#F9A334] text-base group"
                 onClick={navigateToGallery}>
                 View More
                 <span className=" group-hover:translate-x-3 mt-[2px] transition-all duration-500">{rightArrow}</span>

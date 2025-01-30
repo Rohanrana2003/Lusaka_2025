@@ -46,6 +46,8 @@ const Event3 = () => {
 
             </section>
 
+
+            {/* Focus Areas */}
             <section>
                 <h1 className="text-4xl max-md:text-2xl font-bold text-black  text-center">Our Focus Areas</h1>
 
@@ -72,6 +74,7 @@ const Event3 = () => {
                 </div>
             </section>
 
+            {/* Venue Details */}
             <section className="px-5 py-16 bg-slate-200 sm:px-20 ">
                 <h1 className=" text-4xl max-md:text-2xl font-bold text-black  text-center">
                     Where the <span className="text-red-800 '">LUSAKA MOTOR SHOW</span> will Take Place</h1>
@@ -79,7 +82,7 @@ const Event3 = () => {
                     {
                         venue1ImgData.map((img, i) => (
                             <div className="relative carousel-item mx-3 group" key={i} >
-                                <img src={img.imageLink} className=" w-80 aspect-[4/3] " />
+                                <img src={img.imageLink} className=" max-sm:w-60 w-80 aspect-[4/3] " />
 
                                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-80 md:opacity-0  group-hover:opacity-100 transition-opacity duration-300">
                                     LUSAKA POLO CLUB
@@ -100,10 +103,10 @@ const Event3 = () => {
             <section className="flex items-center relative justify-center w-[100%] min-h-[80vh] max-md:mt-16 bg-transparent bg-[url('../images/galllery-image7.jpg')] bg-cover bg-center before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 rounded font-[sans-serif] ">
                 <div className="absolute text-center mx-6">
                     <h1 className="text-white sm:text-5xl text-3xl font-extrabold mb-20">GRAB YOUR <span className="">TICKETS</span> NOW !</h1>
-                    
+
                     <button type="button"
                         className="px-10 py-5 rounded text-sm tracking-wider font-semibold border border-gray-500  outline-none hover:border-transparent hover:bg-red-900 bg-red-700  text-white transition-all duration-300">
-                       BOOK NOW
+                        BOOK NOW
                     </button>
                 </div>
             </section>

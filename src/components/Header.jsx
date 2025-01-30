@@ -6,7 +6,7 @@ import MyContext from "../context/MyContext";
 
 const Header = () => {
 
-  const [ selectedButton, setSelectedButton ] = useContext(MyContext); //Selected Header Buttons
+  const [selectedButton, setSelectedButton] = useContext(MyContext); //Selected Header Buttons
   const [showEvents, setShowEvents] = useState(false) //Dropdown of events
   const collapseMenu = useRef(); // Mobile Side Menu
   const navigate = useNavigate();
@@ -64,7 +64,7 @@ const Header = () => {
                     onMouseLeave={() => setShowEvents(false)}
                     onClick={() => { handlePageRedirect(item); showEventsButton(item) }}
                     className={`flex items-center gap-[2px] font-[600] text-[16px] max-md:text-[15px] 
-                   transition-all duration-300 ${selectedButton === item.id ? 'text-white' : 'text-black'}`} >
+                   ${selectedButton === item.id ? 'text-white' : 'text-black'}`} >
                     {item.name} {item.pathName === 'events' ? downArrow : ''}
 
                     {/* dropdown events list */}
@@ -73,7 +73,7 @@ const Header = () => {
                       <ul className="absolute bg-white w-fit py-2 max-md:mt-[150px] md:top-14 max-md:w-[80%]    max-md:px-1 max-md:pb-1 max-md:rounded h-fit z-20 rounded-lg">
                         {
                           item.subComponents.map((subItem) => (
-                            <li key={subItem.name} 
+                            <li key={subItem.name}
                               onClick={() => handlePageRedirect(subItem)}
                               className="text-black px-5 transition-all duration-100 max-md:mb-1 max-md:bg-green-900 max-md:text-white py-1 text-sm hover:bg-green-900 rounded hover:text-white" >
                               {subItem.name}
@@ -91,7 +91,7 @@ const Header = () => {
         <div className='flex ml-auto md:hidden'>
           <button id="toggleOpen" onClick={handleToggleHeader}>{barIcon}</button>
         </div>
-        
+
       </div>
 
       <section

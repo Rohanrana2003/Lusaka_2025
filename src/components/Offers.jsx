@@ -6,7 +6,7 @@ const Offers = () => {
 
       <section className=" flex items-center relative justify-center w-[100%] h-80  before:absolute before:w-full before:h-full 
           before:inset-0 before:bg-black/55 bg-[url('../images/offer-bg.jpg')] bg-cover bg-center">
-        <h1 className="absolute max-md:text-[38px] max-md:text-center font-serif text-6xl text-white font-semibold">Offers & Deals</h1>
+        <h1 className="absolute max-md:text-[38px] max-md:text-center font-serif text-6xl text-white font-medium">Offers & Deals</h1>
       </section>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-10 my-16 gap-10 items-center justify-center">

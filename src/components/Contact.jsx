@@ -20,31 +20,31 @@ const Contact = () => {
             <div>
               <label className="text-gray-800 text-base block mb-2">Name</label>
               <input type='text' placeholder='Enter Name'
-                className="w-full text-gray-600 rounded-md py-2.5 px-4 bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
+                className="w-full text-gray-600 rounded-md py-2.5 px-4 transition-all duration-300  bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
             </div>
             <div>
               <label className="text-gray-800 text-base block mb-2">Email</label>
               <input type='email' placeholder='Email'
-                className="w-full text-gray-600 rounded-md py-2.5 px-4 bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
+                className="w-full text-gray-600 rounded-md py-2.5 px-4 transition-all duration-300  bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
             </div>
             <div>
               <label className="text-gray-800 text-base block mb-2">Number</label>
               <input type='email' placeholder='Phone No.'
-                className="w-full text-gray-600 rounded-md py-2.5 px-4 bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
+                className="w-full text-gray-600 rounded-md py-2.5 px-4 transition-all duration-300  bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
             </div>
             <div>
               <label className="text-gray-800 text-base block mb-2">Subject</label>
               <input type='text' placeholder='Subject'
-                className="w-full text-gray-600 rounded-md py-2.5 px-4 bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
+                className="w-full text-gray-600 rounded-md py-2.5 px-4 transition-all duration-300  bg-white focus:bg-[#fff3e3]  border border-gray-400 text-sm focus:border-[#F9A334] outline-none" />
             </div>
             <div className="col-span-full">
               <label className="text-gray-800 text-base block mb-2">Message</label>
               <textarea placeholder='Message' rows="6"
-                className="w-full text-gray-600 rounded-md px-4 border bg-white focus:bg-[#fff3e3] border-gray-400 text-sm pt-3 focus:border-[#F9A334] outline-none"></textarea>
+                className="w-full text-gray-600 rounded-md px-4 border transition-all duration-300  bg-white focus:bg-[#fff3e3] border-gray-400 text-sm pt-3 focus:border-[#F9A334] outline-none"></textarea>
             </div>
 
             <button type='button'
-              className="col-span-full text-white w-max bg-[#ff9100] hover:bg-[#F9A334] tracking-wide rounded text-sm px-4 py-2.5 flex mx-auto">
+              className="col-span-full text-white w-max bg-[#ff9100] transition-all duration-100 hover:bg-[#F9A334] tracking-wide rounded text-sm px-4 py-2.5 flex mx-auto">
               <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' className="mr-2 inline" viewBox="0 0 548.244 548.244">
                 <path fillRule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clipRule="evenodd" data-original="#000000" />
               </svg>
