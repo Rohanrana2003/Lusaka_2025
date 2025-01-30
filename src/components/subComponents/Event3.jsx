@@ -82,7 +82,7 @@ const Event3 = () => {
                     {
                         venue1ImgData.map((img, i) => (
                             <div className="relative carousel-item mx-3 group" key={i} >
-                                <img src={img.imageLink} className=" max-sm:w-60 w-80 aspect-[4/3] " />
+                                <img src={img.imageLink} className=" max-sm:w-64 w-80 aspect-[4/3] " />
 
                                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-80 md:opacity-0  group-hover:opacity-100 transition-opacity duration-300">
                                     LUSAKA POLO CLUB

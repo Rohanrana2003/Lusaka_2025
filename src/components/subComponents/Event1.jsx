@@ -49,6 +49,7 @@ const Event1 = () => {
 
             </section>
 
+            {/* Focus Areas */}
             <section>
                 <h1 className="text-4xl max-md:text-2xl font-bold text-black  text-center">Our Focus Areas</h1>
 
@@ -75,6 +76,7 @@ const Event1 = () => {
                 </div>
             </section>
 
+            {/* Venues Details */}
             <section className="px-5 py-16   sm:px-20 bg-slate-200 ">
                 <h1 className=" text-4xl max-md:text-2xl font-bold text-black  text-center">
                     Where the <span className="text-green-600 '">MUKSHI AGRI EXPO EVENT</span> will Take Place</h1>
@@ -82,7 +84,7 @@ const Event1 = () => {
                     {
                         venue1ImgData.map((img, i) => (
                             <div className="relative carousel-item mx-3 group" key={i} >
-                                <img src={img.imageLink} className=" w-80 aspect-[4/3] " />
+                                <img src={img.imageLink} className="max-sm:w-64 w-80 aspect-[4/3] " />
 
                                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-80 md:opacity-0  group-hover:opacity-100 transition-opacity duration-300">
                                     FIKA LODGE
@@ -104,10 +106,10 @@ const Event1 = () => {
             <section className="flex items-center relative justify-center w-[100%] min-h-[80vh] bg-transparent bg-[url('../images/galllery-image3.jpg')] bg-cover bg-center before:absolute before:w-full before:h-full before:inset-0 before:bg-black/55 rounded font-[sans-serif] ">
                 <div className="absolute text-center mx-6">
                     <h1 className="text-white sm:text-5xl text-3xl font-extrabold mb-20">GRAB YOUR <span className="text-green-500">TICKETS</span> NOW !</h1>
-                    
+
                     <button type="button"
                         className="px-10 py-5 rounded tracking-wider font-semibold border border-gray-500  outline-none hover:border-transparent hover:bg-green-900 bg-green-600  text-white transition-all duration-300 text-base">
-                       BOOK NOW
+                        BOOK NOW
                     </button>
                 </div>
             </section>
