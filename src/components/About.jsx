@@ -36,7 +36,7 @@ const About = () => {
           {
             aboutData.map(item => (
               <div key={item.id} className="flex items-start gap-2 mb-2">
-                <img src="images/accept.png" className="h-6 mt-1"/>
+                <img src="/images/accept.png" className="h-6 mt-1"/>
                 <li className="">{item.content}</li>
               </div>
             ))
