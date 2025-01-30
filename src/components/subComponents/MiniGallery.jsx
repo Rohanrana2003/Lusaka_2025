@@ -30,7 +30,7 @@ const MiniGallery = () => {
         <div className="text-center min-w-full font-[sans-serif] py-24 bg-slate-200 not-selectable">
             <h2 className="text-gray-800 text-3xl font-bold  text-center">Some Unforgettable Memories</h2>
 
-            <Swiper
+            <Swiper 
                 slidesPerView={1.2}
                 spaceBetween={10}
                 pagination={{

@@ -10,7 +10,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} 
 
 body{
   scroll-behavior: smooth;
@@ -18,7 +18,7 @@ body{
 
 .swiper {
   width: 95vw;
-}
+} 
 
 .swiper-slide {
   text-align: center;
@@ -41,3 +41,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
 }
 
+
+@media only screen and (min-width: 1388px) {
+  .partners-swiper {
+    width: 80vw;
+  } 
+}
+
+@media only screen and (min-width: 1660px) {
+  .partners-swiper {
+    width: 70vw;
+  } 
+}

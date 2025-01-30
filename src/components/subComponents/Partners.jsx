@@ -27,7 +27,7 @@ const Partners = () => {
                     }}
 
                     modules={[Autoplay]}
-                    className="mySwiper "
+                    className="mySwiper partners-swiper"
                 >
                     <SwiperSlide>{partner1}</SwiperSlide>
                     <SwiperSlide>{partner2}</SwiperSlide>
@@ -35,9 +35,6 @@ const Partners = () => {
                     <SwiperSlide>{partner4}</SwiperSlide>
                     <SwiperSlide>{partner5}</SwiperSlide>
                     <SwiperSlide>{partner6}</SwiperSlide>
-                    <SwiperSlide>{partner1}</SwiperSlide>
-                    <SwiperSlide>{partner2}</SwiperSlide>
-                    <SwiperSlide>{partner3}</SwiperSlide>
 
                 </Swiper>
             </div>
