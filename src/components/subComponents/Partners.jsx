@@ -4,7 +4,7 @@ import '../../index.css'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { partner1, partner2, partner3, partner4, partner5, partner6 } from '../../utils/constants';
+import { partners } from '../../utils/constants';
 
 const Partners = () => {
     return (
@@ -15,27 +15,25 @@ const Partners = () => {
                     spaceBetween={20}
                     slidesPerView={3}
                     loop={true}
+                    freeMode={true}
+
+                    autoplay={{
+                        delay: 1800,
+                        disableOnInteraction: false,
+                    }}
                     breakpoints={{
                         480: { slidesPerView: 3, spaceBetween: 20 },
                         768: { slidesPerView: 4, spaceBetween: 50 },
                         1024: { slidesPerView: 5, spaceBetween: 50 },
                     }}
-                    freeMode={true}
-                    autoplay={{
-                        delay: 1800,
-                        disableOnInteraction: false,
-                    }}
-
                     modules={[Autoplay]}
                     className="mySwiper partners-swiper"
                 >
-                    <SwiperSlide>{partner1}</SwiperSlide>
-                    <SwiperSlide>{partner2}</SwiperSlide>
-                    <SwiperSlide>{partner3}</SwiperSlide>
-                    <SwiperSlide>{partner4}</SwiperSlide>
-                    <SwiperSlide>{partner5}</SwiperSlide>
-                    <SwiperSlide>{partner6}</SwiperSlide>
-
+                    {
+                        partners.map((partner, i) => (
+                            <SwiperSlide key={i}>{partner.partner}</SwiperSlide>
+                        ))
+                    }
                 </Swiper>
             </div>
         </section>
