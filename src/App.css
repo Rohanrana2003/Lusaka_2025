@@ -9,7 +9,6 @@
   font-weight: bold;
   font-size: 10px;
   visibility: hidden;
-  animation: right 1s ;
 }
 
 @keyframes left {

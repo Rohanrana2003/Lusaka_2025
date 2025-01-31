@@ -27,13 +27,14 @@ const Magazine = () => {
       </section>
 
       <section className="flex max-md:flex-col">
-        <div className="flex flex-col items-start gap-10 max-lg:gap-5 p-4 m-10 max-lg:m-5" >
+        <div className="flex flex-col items-start gap-10 max-lg:gap-5 p-4 m-10 max-lg:m-5 sm:px-10 md:px-0" >
+
           <h1 className="font-serif text-4xl max-lg:text-3xl  xl:w-[450px]">A PRINT AND DIGITAL POWERHOUSE</h1>
           <p className="max-lg:text-sm font-sans text-gray-700">
-            For 41 years now, the award-winning Goodguys Goodtimes Gazette Magazine has been entertaining hot rodders of all ages across the world! The full-color publication is a monthly, full-color, magazine delivered directly to passionate car enthusiasts and do-it-yourselfers who are active and influential in the hobby.
+            Rev up your curiosity with LUSAKA MAGAZINES where horsepower meets innovation. Dive into expert reviews, electrifying drives, and the stories behind the world’s most iconic machines. For enthusiasts who live and breathe automotive excellence
           </p>
 
-          <button onClick={navigateToContact} 
+          <button onClick={navigateToContact}
             className="px-10 py-6 font-sans max-lg:py-4 max-lg:px-8 bg-[#F9A334] hover:bg-[#ed8e13] transition-all duration-300" >
             Contact Us
           </button>
@@ -44,6 +45,24 @@ const Magazine = () => {
         </div>
       </section>
 
+
+      {/* Latest Magazines */}
+      <section className="flex  items-center justify-center h-full max-md:text-center">
+        <div className="flex max-md:flex-col max-md:items-center justify-center gap-10 bg-white border-2 my-10 md:w-[90vw] 
+          lg:w-[900px] max-md:p-5 p-10 max-sm:mx-5">
+
+          <div className="max-w-[450px]">
+            <h1 className="font-serif text-5xl max-lg:text-4xl my-5 md:mt-8 lg:mt-12">Latest Edition</h1>
+            <p className="max-md:text-sm max-md:text-justify text-gray-600">
+              The future hits the road in our latest edition. Discover hands-on reviews of electric beasts, retro-modern redesigns, and the science of aerodynamics. Your ticket to tomorrow’s automotive world? Right here. Rev your curiosity grab your copy now.
+            </p>
+          </div>
+
+          <div className="border overflow-hidden min-w-[50%]  max-h-[300px] max-sm:max-h-[230px] ">
+            <img className=" w-[400px] h-[300px] object-cover " src="/images/mag-latest.jpg" />
+          </div>  
+        </div>
+      </section>
     </div>
   )
 }
