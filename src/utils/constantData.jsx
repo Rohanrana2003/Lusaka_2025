@@ -256,3 +256,52 @@ export const offersData = [
     title:'Hino 300 Series (714)'
   },
 ]
+
+export const magData = [
+  {
+    id:1,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:2,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:3,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:4,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:5,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:6,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:7,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:8,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:9,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:10,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  }, {
+    id:11,
+    title:'The Future Hits the Road',
+    imgSrc:'images/mag-mag.jpg',
+  },
+  
+]
