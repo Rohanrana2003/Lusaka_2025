@@ -78,7 +78,9 @@ const Magazine = () => {
                        gap-16 justify-center items-center max-sm:px-10 px-20 my-10 ">
           {
             magData.map((mag) => (
-              <div key={mag.id}
+              <a key={mag.id} target="_blank" referrerPolicy="no-referrerx`" 
+                  href="https://online.fliphtml5.com/cjwmu/ldmg/">
+              <div 
                 className=" group p-2 w-full h-full bg-white hover:scale-[1.03] transition-all duration-300 cursor-pointer overflow-hidden">
                 <div className=" w-full h-[85%]">
                   <img className="w-full h-full object-cover object-center" src={mag.imgSrc} />
@@ -87,6 +89,7 @@ const Magazine = () => {
                 <p className="text-sm text-gray-800 p-3 group-hover:text-black">{mag.title}
                   <br /> <span className="text-[14px] text-gray-600">~20/02/2020</span> </p>
               </div>
+              </a>
             ))
           }
 
