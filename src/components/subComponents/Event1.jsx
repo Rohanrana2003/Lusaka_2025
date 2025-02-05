@@ -25,12 +25,12 @@ const Event1 = () => {
         <div className="bg-white">
             <div className="relative flex justify-center text-center items-center w-full h-[300px] bg-center bg-cover bg-[url('../images/agri-bg.jpg')] before:absolute before:z-10 before:w-full before:h-[300px] before:inset-0 before:bg-black/55">
                 <h1 className="bg-black absolute text-green-500 bg-opacity-20 z-20 text-4xl max-md:text-3xl  font-bold w-fit  py-2 px-4 mx-auto "><i>MUKSHI AGRI EXPO EVENT</i> </h1>
-            </div>
+            </div>  
 
 
-            <section className="grid grid-cols-2 gap-5 max-lg:grid-cols-1 px-5 max-sm:py-16 py-20 sm:px-20 items-center">
-                <div>
-                    <video controls className="w-[500px] max-lg:mx-auto " autoPlay>
+            <section className="grid grid-cols-2 gap-5 max-lg:grid-cols-1 px-5 py-10 sm:px-20 items-center">
+                <div className="w-full h-full">
+                    <video controls className="w-fulll h-full p-2 md:p-10 max-lg:mx-auto " autoPlay>
                         <source src="/images/event-video.mp4" type="video/mp4" />
                     </video>
                 </div>

@@ -17,7 +17,6 @@ const Home = () => {
     scrollTo(0, 0);
   }, [])
 
-
   const navigatePath = (item) => {
     navigate(item.path)
     setSelectedButton(item.headerNumber)

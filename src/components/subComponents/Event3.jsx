@@ -25,15 +25,15 @@ const Event3 = () => {
             </div>
 
 
-            <section className="grid grid-cols-2 gap-5 max-lg:grid-cols-1 px-5 py-20 sm:px-20 items-center">
-                <div>
-                    <video controls className="w-[500px] max-lg:mx-auto" autoPlay>
+            <section className="grid grid-cols-2 gap-5 max-lg:grid-cols-1 px-5 py-10 sm:px-20 items-center">
+                <div className="w-full h-full">
+                    <video controls className="w-fulll h-full p-2 md:p-10 max-lg:mx-auto " autoPlay>
                         <source src="/images/event-video.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div>
                     <h1 className="text-red-800 text-xl font-semibold">This September in LUSAKA</h1>
-                    <p className="text-gray-600 max-lg:text-justify max-sm:text-[15px]">
+                    <p className="text-gray-600 max-lg:text-justify max-sm:text-sm max-sm:mt-2">
                         Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultrices, non consequat mauris tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur nibh, a pharetra felis turpis vitae ligula. Etiam laoreet velit nec neque ultri
                         Lorem ipsum dolor sit amFet, consectetur adipiscing elit. Duis ac
                     </p>
