@@ -20,7 +20,7 @@ const About = () => {
       </section> 
 
 
-      <section className=" py-10 px-5 sm:px-20 md:px-10 xl:px-36 text-justify grid max-md:grid-cols-1 grid-cols-2 items-center">
+      <section className=" py-10 px-5 sm:px-20 md:px-10 2xl:px-36 text-justify grid max-md:grid-cols-1 grid-cols-2 items-center">
         <img className="ma-md:hidden max-md:p-5 max-md:-mb-10 rounded-lg max-sm:rounded-[25px]" src="images/about-image2.jpg" />
         <div className=" flex flex-col items-center rounded md:rounded-r-lg text-[#000] bg-[#f9a334] max-md:p-5 p-10 shadow md:shadow-black">
           <i className="max-md:text-2xl text-3xl mb-2 ">Know About Us...</i>
